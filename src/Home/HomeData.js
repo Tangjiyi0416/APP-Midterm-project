@@ -8,7 +8,7 @@ import {
   Image,
   Pressable,
 } from "native-base";
-
+import Starbar from "../star/starabr";
 const HomeData = (Home) => {
   return (
     <Box>
@@ -17,10 +17,10 @@ const HomeData = (Home) => {
         <Image />
       </HStack>
       <VStack>
-        <Image />
-        <Text></Text>
-        <Text></Text>
-        {/* <starbar></starbar> */}
+        <Image source={{ uri: Home.photo }} />
+        <Text>{Home.name}</Text>
+        <Text>{address}</Text>
+        <starbar>{Home.star}</starbar>
       </VStack>
     </Box>
   );
