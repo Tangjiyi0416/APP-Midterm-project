@@ -9,7 +9,7 @@ const HomeList = ({ list, navigation }) => {
     <FlatList
       data={list}
       renderItem={renderItem}
-      keyExtractor={(item) => item.name}
+      keyExtractor={(item) => item.title}
     />
   );
 };
