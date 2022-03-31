@@ -11,18 +11,20 @@ import {
 import Starbar from "../star/starabr";
 const HomeData = ({ Home, navigation }) => {
   return (
-    <Box>
+    <Box mx="auto">
       {/* <HStack>
         <Image />
         <Image />
       </HStack> */}
       <VStack>
-        <AspectRatio w="100" h="150">
+        <AspectRatio w="350" h="250">
           <Image source={{ uri: Home.photo }} alt="store" />
         </AspectRatio>
 
-        <Text>{Home.name}</Text>
-        <Text>{Home.address}</Text>
+        <Text fontWeight="bold" fontSize="18">
+          {Home.name}
+        </Text>
+        <Text color={"#808080"}>{Home.address}</Text>
         {/* <starbar>{Home.star}</starbar> */}
       </VStack>
     </Box>

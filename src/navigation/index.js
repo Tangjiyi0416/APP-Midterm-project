@@ -5,6 +5,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import { StatusBar } from "native-base";
 import { extendTheme, useColorMode } from "native-base";
+import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
 
 import HomeScreen from "../screen/HomeScreen";
 
@@ -47,51 +48,47 @@ const MyTabs = () => {
           ),
         }}
       />
-      {/* <Tab.Screen
-        name="SettingsStack"
-        component={SettingsStack}
+      <Tab.Screen
+        name="SearchStack"
+        component={HomeStack}
         options={{
           headerShown: false,
-          title: "Settings",
-          headerTitleStyle: {
-            fontWeight: "400",
-            fontSize: 20,
-          },
+          title: "Search",
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="cog" color={color} size={26} />
+            <MaterialCommunityIcons
+              name="feature-search-outline"
+              color={color}
+              size={26}
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="FavoriteStack"
+        component={HomeStack}
+        options={{
+          headerShown: false,
+          title: "Favorite",
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons
+              name="cards-heart"
+              color={color}
+              size={26}
+            />
           ),
         }}
       />
       <Tab.Screen
         name="SettingsStack"
-        component={SettingsStack}
+        component={HomeStack}
         options={{
           headerShown: false,
           title: "Settings",
-          headerTitleStyle: {
-            fontWeight: "400",
-            fontSize: 20,
-          },
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="cog" color={color} size={26} />
+            <SimpleLineIcons name="settings" color={color} size={26} />
           ),
         }}
       />
-      <Tab.Screen
-        name="SettingsStack"
-        component={SettingsStack}
-        options={{
-          headerShown: false,
-          title: "Settings",
-          headerTitleStyle: {
-            fontWeight: "400",
-            fontSize: 20,
-          },
-          tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="cog" color={color} size={26} />
-          ),
-        }}
-      /> */}
     </Tab.Navigator>
   );
 };
