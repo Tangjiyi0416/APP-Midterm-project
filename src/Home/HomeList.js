@@ -5,7 +5,7 @@ const HomeList = ({ list, navigation }) => {
   const renderItem = ({ item }) => (
     <HomeData Home={item} navigation={navigation} />
   );
-  console.warn(list);
+  //console.warn(list);
   return (
     <FlatList
       data={list}

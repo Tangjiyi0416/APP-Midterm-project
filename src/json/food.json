@@ -1,9 +1,8 @@
 {
-  "title": "國北生活圈",
   "restaurantList": [
     {
-      "name": "新川屋",
-      "address": "辛川屋台北市和平東路二段331號",
+      "name": "辛川屋",
+      "address": "台北市和平東路二段331號",
       "phone": "02 2700-6131",
       "time": "11:00 ~ 21:00",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/%E8%BE%9B%E5%B7%9D%E5%B1%8B.jpg?raw=true",
