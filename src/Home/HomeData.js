@@ -25,6 +25,7 @@ const HomeData = ({ Home, navigation }) => {
         <Text fontSize={20} fontWeight={'bold'}>{Home.name}</Text>
         <Text color={'#808080'}>{Home.address}</Text>
         <Starbar star={Home.star}/>
+
       </VStack>
     </Box>
   );
