@@ -31,8 +31,8 @@ const MyTabs = () => {
     <Tab.Navigator
       initialRouteName="HomeStack"
       screenOptions={{
-        tabBarInactiveTintColor: "black",
-        tabBarActiveTintColor: " #EC9976",
+        // tabBarInactiveTintColor: "#EC9976", //未被選中的顏色
+        tabBarActiveTintColor: "#EC9976", //選中的顏色
       }}
     >
       <Tab.Screen
@@ -41,8 +41,9 @@ const MyTabs = () => {
         options={{
           headerShown: false,
           title: "Home",
-          tabBarIcon: () => (
-            <MaterialCommunityIcons name="home" color={"#EC9976"} size={26} />
+
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="home" color={color} size={26} />
           ),
         }}
       />
@@ -128,7 +129,7 @@ const MyTabs = () => {
 // };
 
 const HomeStack = () => {
-  const { colorMode } = useColorMode();
+  // const { colorMode } = useColorMode();
 
   return (
     <Stack.Navigator
@@ -140,6 +141,9 @@ const HomeStack = () => {
         name="Home"
         component={HomeScreen}
         options={{
+          headerShadowVisible: false,
+          headerShown: false,
+          // title: foodData.title,
           headerTitleStyle: {
             fontWeight: "400",
             fontSize: 20,

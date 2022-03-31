@@ -9,18 +9,21 @@ import {
   Pressable,
 } from "native-base";
 import Starbar from "../star/starabr";
-const HomeData = (Home, navigation) => {
+const HomeData = ({ Home, navigation }) => {
   return (
     <Box>
-      <HStack>
+      {/* <HStack>
         <Image />
         <Image />
-      </HStack>
+      </HStack> */}
       <VStack>
-        <Image source={{ uri: Home.photo }} />
+        <AspectRatio w="100" h="150">
+          <Image source={{ uri: Home.photo }} alt="store" />
+        </AspectRatio>
+
         <Text>{Home.name}</Text>
         <Text>{Home.address}</Text>
-        <starbar>{Home.star}</starbar>
+        {/* <starbar>{Home.star}</starbar> */}
       </VStack>
     </Box>
   );
