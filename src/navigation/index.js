@@ -145,7 +145,7 @@ const HomeStack = () => {
 
           headerTitleStyle: {
             fontWeight: "400",
-            fontSize: 20,
+            fontSize: 14,
           },
         }}
       />
