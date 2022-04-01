@@ -47,14 +47,14 @@ const DetailScreen = ({ route }) => {
             alt="store"
             //   borderRadius={10}
             //   blurRadius={6}
-            //   opacity={100}
+            opacity={60}
           />
         </AspectRatio>
 
         <Box>
           <HStack mt={30} ml={10} mb={5}>
             <Box justifyContent="flex-end">
-              <Text fontSize={28}>{name}</Text>
+              <Text fontSize={28} mr={5}>{name}</Text>
             </Box>
 
             <Box justifyContent="flex-end" pb={1}>
@@ -72,7 +72,7 @@ const DetailScreen = ({ route }) => {
           </HStack>
           <HStack ml={10} mb={2}>
             <MaterialCommunityIcons name="map-marker" color={"red"} size={25} />
-            <Text ml={3} fontSize={20}>
+            <Text ml={3} fontSize={20} mr={70}>
               {address}
             </Text>
           </HStack>
@@ -108,7 +108,7 @@ const DetailScreen = ({ route }) => {
               <MaterialCommunityIcons name="star" color={"#FDAD35"} size={28} />
             </Box>
 
-            <Text ml={3} fontSize={2}>
+            <Text ml={3} fontSize={24}>
               {title}
             </Text>
           </HStack>
