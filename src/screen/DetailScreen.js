@@ -108,7 +108,7 @@ const DetailScreen = ({ route }) => {
               <MaterialCommunityIcons name="star" color={"#FDAD35"} size={28} />
             </Box>
 
-            <Text ml={3} fontSize={2}>
+            <Text ml={3} fontSize={26}>
               {title}
             </Text>
           </HStack>

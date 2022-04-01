@@ -9,6 +9,7 @@ import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
 
 import HomeScreen from "../screen/HomeScreen";
 import DetailScreen from "../screen/DetailScreen";
+import SearchScreen from "../screen/SearchScreen";
 
 import { lightTheme, darkTheme } from "../Theme";
 
@@ -51,7 +52,7 @@ const MyTabs = () => {
       />
       <Tab.Screen
         name="SearchStack"
-        component={HomeStack}
+        component={SearchStack}
         options={{
           headerShown: false,
           title: "Search",
@@ -175,30 +176,26 @@ const HomeStack = () => {
           // },
         })}
       />
-      {/* <Stack.Screen
+    </Stack.Navigator>
+  );
+};
+const SearchStack = () => {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen
         name="Search"
-        component={searchScreen}
-        options={({ route }) => ({
-          title: route.params.title,
-          headerTintColor: colorMode == "light" ? "black" : "white",
+        component={SearchScreen}
+        options={{
+          headerShadowVisible: false,
+          headerShown: false,
+          // title: "國北人今天想來點什麼？",
+
           headerTitleStyle: {
             fontWeight: "400",
-            fontSize: 20,
+            fontSize: 14,
           },
-        })}
-      /> */}
-      {/* <Stack.Screen
-        name="Search"
-        component={searchScreen}
-        options={({ route }) => ({
-          title: route.params.title,
-          headerTintColor: colorMode == 'light' ? 'black' : 'white',
-          headerTitleStyle: {
-            fontWeight: '400',
-            fontSize: 20
-          },
-        })}
-      /> */}
+        }}
+      />
     </Stack.Navigator>
   );
 };
