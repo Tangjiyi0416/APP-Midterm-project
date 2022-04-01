@@ -108,5 +108,5 @@
       "comment": "留言評論區"
     }
   ],
-  "SearchList": [{ "title": "search", "photo": "" }]
+  "SearchList": [{ "title": "search", "photo": "", "label": "" }]
 }
