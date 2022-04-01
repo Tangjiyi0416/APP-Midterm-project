@@ -7,8 +7,38 @@
       "time": "11:00 ~ 21:00",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/%E8%BE%9B%E5%B7%9D%E5%B1%8B.jpg?raw=true",
       "star": 4
+    },
+    {"name": "I’m pasta",
+      "address": "台北市大安區和平東路二段118巷50號",
+      "phone": "02 2700-6131",
+      "time": "11:00 ~ 21:00",
+      "photo": "https://raw.githubusercontent.com/Benson0409/APP-Midterm-project/master/img/im%20pasta.jpg.webp",
+      "star": 4
+    },
+    {"name": "梧貳WUERFOODS",
+      "address": "台北市大安區和平東路二段118巷56號",
+      "phone": "02 2700-6131",
+      "time": "11:00 ~ 21:00",
+      "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/梧貳WUERFOODS.jpeg?raw=true",
+      "star": 4
+    },
+    
+    {"name": "雪人兄弟",
+      "address": "台北市大安區大安路一段194號",
+      "phone": "02 2700-6131",
+      "time": "11:00 ~ 21:00",
+      "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/雪人兄弟.jpeg?raw=true",
+      "star": 4
+    },
+    {"name": "JOY.S LOVE就是愛",
+      "address": "台北市大安區和平東路二段118巷4號",
+      "phone": "02 2700-6131",
+      "time": "11:00 ~ 21:00",
+      "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/就是愛煎餅果子.jpeg?raw=true",
+      "star": 4
     }
   ],
+  
   "restaurantRecommand": [
     {
       "title": "人氣推薦",

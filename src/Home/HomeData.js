@@ -11,21 +11,22 @@ import {
 import Starbar from "../star/starabr";
 const HomeData = ({ Home, navigation }) => {
   return (
-    <Box mx="auto">
+    
+    <Box mx="auto" mb="15">
       {/* <HStack>
         <Image />
         <Image />
       </HStack> */}
       <VStack>
-      <Text fontSize={14} >國北人今天想來點什麼呢？</Text>
         <AspectRatio w="350" h="250" >
-          <Image source={{ uri: Home.photo }} alt="store"  />
+          <Image source={{ uri: Home.photo }} borderRadius="10" alt="store"  />
         </AspectRatio>
-
         <Text fontSize={20} fontWeight={'bold'}>{Home.name}</Text>
         <Text color={'#808080'}>{Home.address}</Text>
+        <HStack>
         <Starbar star={Home.star}/>
-
+        <Text>{Home.star}.0 <Text color={"gray"} >/ 5.0</Text></Text>
+        </HStack>
       </VStack>
     </Box>
   );
