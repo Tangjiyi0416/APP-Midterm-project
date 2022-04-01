@@ -8,6 +8,7 @@ import { extendTheme, useColorMode } from "native-base";
 import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
 
 import HomeScreen from "../screen/HomeScreen";
+import DetailScreen from "../screen/DetailScreen";
 
 import { lightTheme, darkTheme } from "../Theme";
 
@@ -149,31 +150,36 @@ const HomeStack = () => {
           },
         }}
       />
+      <Stack.Screen
+        name="DetailScreen"
+        component={DetailScreen}
+        options={({ route }) => ({
+          // title: route.params.title,
+          // headerShown: false,
+          // headerTintColor: colorMode == "light" ? "black" : "white",
+          // headerBackImageSource: route.params.photo,
+          headerTitleStyle: {
+            fontWeight: "400",
+            fontSize: 20,
+          },
+          // headerTitle: () => (
+          //   <Image style={{ width: 50, height: 50 }} uri={route.params.photo} />
+          // ),
+        })}
+      />
       {/* <Stack.Screen
         name="Search"
         component={searchScreen}
         options={({ route }) => ({
           title: route.params.title,
-          headerTintColor: colorMode == 'light' ? 'black' : 'white',
+          headerTintColor: colorMode == "light" ? "black" : "white",
           headerTitleStyle: {
-            fontWeight: '400',
-            fontSize: 20
+            fontWeight: "400",
+            fontSize: 20,
           },
         })}
-      />
-      <Stack.Screen
-        name="Search"
-        component={searchScreen}
-        options={({ route }) => ({
-          title: route.params.title,
-          headerTintColor: colorMode == 'light' ? 'black' : 'white',
-          headerTitleStyle: {
-            fontWeight: '400',
-            fontSize: 20
-          },
-        })}
-      />
-      <Stack.Screen
+      /> */}
+      {/* <Stack.Screen
         name="Search"
         component={searchScreen}
         options={({ route }) => ({

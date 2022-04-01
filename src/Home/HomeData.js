@@ -17,9 +17,11 @@ const HomeData = ({ Home, navigation }) => {
         <Image />
       </HStack> */}
       <VStack>
-        <AspectRatio w="350" h="250">
-          <Image source={{ uri: Home.photo }} alt="store" borderRadius={10} />
-        </AspectRatio>
+        <Pressable onPress={() => navigation.navigate("DetailScreen", Home)}>
+          <AspectRatio w="350" h="250">
+            <Image source={{ uri: Home.photo }} alt="store" borderRadius={10} />
+          </AspectRatio>
+        </Pressable>
 
         <Text fontWeight="bold" fontSize="18">
           {Home.name}

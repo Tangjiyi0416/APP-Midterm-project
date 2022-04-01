@@ -6,7 +6,14 @@
       "phone": "02 2700-6131",
       "time": "11:00 ~ 21:00",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/%E8%BE%9B%E5%B7%9D%E5%B1%8B.jpg?raw=true",
-      "star": 3
+      "star": 3,
+      "title": "人氣推薦",
+      "food1": "手作麻醬拌麵",
+      "food1Money": "50元",
+      "food2": "經典肉醬拌麵",
+      "food2Money": "60元",
+      "food3": "特級牛丼飯",
+      "food3Money": "90元"
     },
     {
       "name": "I’m pasta",
@@ -40,18 +47,6 @@
       "time": "11:00 ~ 21:00",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/就是愛煎餅果子.jpeg?raw=true",
       "star": 4
-    }
-  ],
-
-  "restaurantRecommand": [
-    {
-      "title": "人氣推薦",
-      "food1": "手作麻醬拌麵",
-      "food1Money": "50元",
-      "food2": "經典肉醬拌麵",
-      "food2Money": "60元",
-      "food3": "特級牛丼飯",
-      "food3Money": "90元"
     }
   ]
 }
