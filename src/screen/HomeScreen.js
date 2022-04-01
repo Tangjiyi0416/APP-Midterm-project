@@ -5,7 +5,7 @@ import HomeList from "../Home/HomeList";
 
 const HomeScreen = ({ navigation }) => {
   return (
-    <Box>
+    <Box bg="#fff">
       <HomeList list={foodData.restaurantList} navigation={navigation} />
     </Box>
   );
