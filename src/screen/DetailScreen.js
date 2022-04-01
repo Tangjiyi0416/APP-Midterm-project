@@ -2,6 +2,7 @@ import React from "react";
 import { Linking } from "react-native";
 import Starbar from "../star/starabr";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import {
   Center,
   ScrollView,
@@ -21,16 +22,22 @@ const DetailScreen = ({ route }) => {
     phone,
     time,
     photo,
-    sar,
+    menu,
     title,
     food1,
-    food1Money,
+    food1des,
+    food1img,
     food2,
-    food2Money,
+    food2des,
+    food2img,
     food3,
-    food3Money,
+    food3des,
+    food3img,
+    url,
+    comment,
   } = route.params;
   return (
+<ScrollView>
     <Box>
       <AspectRatio w="100%" ratio={16 / 9}>
         <Image
@@ -38,7 +45,7 @@ const DetailScreen = ({ route }) => {
           alt="store"
           //   borderRadius={10}
           //   blurRadius={6}
-          //   opacity={100}
+          opacity={60}
         />
       </AspectRatio>
 
@@ -83,8 +90,62 @@ const DetailScreen = ({ route }) => {
             {time}
           </Text>
         </HStack>
+        <HStack ml={10} mb={2}>
+          <MaterialIcons
+            name="restaurant-menu"
+            color={"black"}
+            size={25}
+          />
+          <Text ml={3} fontSize={20}>
+            {menu}
+          </Text>
+        </HStack>
+      </Box>
+      <Box mt={50}>
+      <HStack ml={10} mb={2}>
+          <MaterialIcons
+            name="stars"
+            color={"#FDAD35"}
+            size={28}/>
+          <Text ml={3} fontSize={24}>
+            {title}
+          </Text>
+        </HStack>
+        <Box ml={10} mb={5}>
+          <Text ml={3} fontSize={20}>{food1}</Text>
+          <HStack mr={130}> 
+          <Text ml={3} mr={3} fontSize={16}>{food1des}</Text>
+          <Image source={{ uri: food1img }} w={90} h={90}/> 
+          </HStack>
+        </Box>
+        <Box ml={10} mb={5}>
+          <Text ml={3} fontSize={20}>{food2}</Text>
+          <HStack mr={130}>
+          <Text ml={3}  mr={3} fontSize={16}>{food2des}</Text>
+          <Image source={{ uri: food2img }} w={90} h={90}/>
+          </HStack>
+        </Box>
+        <Box ml={10} mb={5}>
+          <Text ml={3} fontSize={20}>{food3}</Text>
+          <HStack mr={130}>
+          <Text ml={3} mr={3} fontSize={16}>{food3des}</Text>
+          <Image source={{ uri: food3img }} w={90} h={90}/>
+          </HStack>
+        </Box>
+      </Box>
+      <Box>
+        <HStack ml={10} mb={2}>
+            <MaterialCommunityIcons
+              name="comment-text"
+              color={"black"}
+              size={28}/>
+            <Text ml={3} fontSize={24}>
+              {comment}
+            </Text>
+          </HStack>
       </Box>
     </Box>
+</ScrollView>
   );
 };
 export default DetailScreen;
