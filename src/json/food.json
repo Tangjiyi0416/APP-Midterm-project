@@ -24,18 +24,44 @@
     {
       "name": "I’m pasta",
       "address": "台北市大安區和平東路二段118巷50號",
-      "phone": "02 2700-6131",
-      "time": "11:00 ~ 21:00",
+      "phone": "02 2735-3535",
+      "time": "11:00 ~ 15:30 / 17:00 ~ 20:30",
       "photo": "https://raw.githubusercontent.com/Benson0409/APP-Midterm-project/master/img/im%20pasta.jpg.webp",
-      "star": 4
+      "star": 4,
+      "menu":"菜單資訊",
+      "url":"https://lookformenu.pureday.life/images/1564456887857.jpg",
+      "title": "人氣推薦",
+      "food1": "奶油蔬菜燉飯",
+      "food1des": "奶油醬很濃郁，高麗菜配上雞肉加奶油醬簡直絕配！米飯是有米心的（不習慣的人可能會覺得有點硬）。",
+      "food1img":"https://iampasta.com.tw/wp-content/uploads/2020/10/23.奶油蔬菜雞肉燉飯.jpg",
+      "food2": "奶油青醬雞肉麵",
+      "food2des": "奶油加入青醬多了一個風味，不容易膩，雞肉不會乾柴，整體比奶醬更有變化。",
+      "food2img":"https://iampasta.com.tw/wp-content/uploads/2020/10/12.奶油青醬雞肉麵.jpg",
+      "food3": "蕃茄培根義大利麵",
+      "food3des": "屬於重口味的義大利麵， 培根煮的剛好 ，不會太乾太柴， 個人覺得它的辣椒香氣及麻度很夠。",
+      "food3img":"https://iampasta.com.tw/wp-content/uploads/2020/10/16.辣味番茄培根麵.jpg",
+      "comment":"留言評論區"
     },
     {
-      "name": "梧貳WUERFOODS",
+      "name": "梧貳",
       "address": "台北市大安區和平東路二段118巷56號",
-      "phone": "02 2700-6131",
-      "time": "11:00 ~ 21:00",
+      "phone": "0972-468-890",
+      "time": "11:00 ~ 14:00 / 17:00 ~ 20:00",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/梧貳WUERFOODS.jpeg?raw=true",
-      "star": 3
+      "star": 3,
+      "menu":"菜單資訊",
+      "url":"https://pic.pimg.tw/joyaijia/1603024202-3261619329-g_wn.jpg",
+      "title": "人氣推薦",
+      "food1": "秘制將雞腿飯",
+      "food1des": "雞腿非常嫩，搭配梧貳特製咖哩醬，醬汁微微辣口味獨特，非常的順口。",
+      "food1img":"https://d1ralsognjng37.cloudfront.net/80ecd906-e88d-4df8-9dee-bca0e9bcb006.jpeg",
+      "food2": "經典美式肉丸飯",
+      "food2des": "肉丸很扎實，蔬菜吃起來也很新鮮，搭配咖哩醬和歐姆蛋簡直絕配。",
+      "food2img":"https://d1ralsognjng37.cloudfront.net/4b26e445-06b8-473d-9b1f-4ea3463fd4ed.jpeg",
+      "food3": "奶油野菜蕈菇飯",
+      "food3des": "屬於重口味的義大利麵， 培根煮的剛好 ，不會太乾太柴， 個人覺得它的辣椒香氣及麻度很夠。",
+      "food3img":"https://d1ralsognjng37.cloudfront.net/a0a33db5-5565-4a0d-8b6f-53049f26592e.jpeg?width=500",
+      "comment":"留言評論區"
     },
 
     {
@@ -44,7 +70,20 @@
       "phone": "02 2700-6131",
       "time": "11:00 ~ 21:00",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/雪人兄弟.jpeg?raw=true",
-      "star": 4
+      "star": 4,
+      "menu":"菜單資訊",
+      "url":"https://lookformenu.pureday.life/images/1564456887857.jpg",
+      "title": "人氣推薦",
+      "food1": "奶油蔬菜燉飯",
+      "food1des": "奶油醬很濃郁，高麗菜配上雞肉加奶油醬簡直絕配！米飯是有米心的（不習慣的人可能會覺得有點硬）。",
+      "food1img":"https://iampasta.com.tw/wp-content/uploads/2020/10/23.奶油蔬菜雞肉燉飯.jpg",
+      "food2": "奶油青醬雞肉麵",
+      "food2des": "奶油加入青醬多了一個風味，不容易膩，雞肉不會乾柴，整體比奶醬更有變化。",
+      "food2img":"https://iampasta.com.tw/wp-content/uploads/2020/10/12.奶油青醬雞肉麵.jpg",
+      "food3": "蕃茄培根義大利麵",
+      "food3des": "屬於重口味的義大利麵， 培根煮的剛好 ，不會太乾太柴， 個人覺得它的辣椒香氣及麻度很夠。",
+      "food3img":"https://iampasta.com.tw/wp-content/uploads/2020/10/16.辣味番茄培根麵.jpg",
+      "comment":"留言評論區"
     },
     {
       "name": "JOY.S LOVE就是愛",
@@ -52,7 +91,20 @@
       "phone": "02 2700-6131",
       "time": "11:00 ~ 21:00",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/就是愛煎餅果子.jpeg?raw=true",
-      "star": 4
+      "star": 4,
+      "menu":"菜單資訊",
+      "url":"https://lookformenu.pureday.life/images/1564456887857.jpg",
+      "title": "人氣推薦",
+      "food1": "奶油蔬菜燉飯",
+      "food1des": "奶油醬很濃郁，高麗菜配上雞肉加奶油醬簡直絕配！米飯是有米心的（不習慣的人可能會覺得有點硬）。",
+      "food1img":"https://iampasta.com.tw/wp-content/uploads/2020/10/23.奶油蔬菜雞肉燉飯.jpg",
+      "food2": "奶油青醬雞肉麵",
+      "food2des": "奶油加入青醬多了一個風味，不容易膩，雞肉不會乾柴，整體比奶醬更有變化。",
+      "food2img":"https://iampasta.com.tw/wp-content/uploads/2020/10/12.奶油青醬雞肉麵.jpg",
+      "food3": "蕃茄培根義大利麵",
+      "food3des": "屬於重口味的義大利麵， 培根煮的剛好 ，不會太乾太柴， 個人覺得它的辣椒香氣及麻度很夠。",
+      "food3img":"https://iampasta.com.tw/wp-content/uploads/2020/10/16.辣味番茄培根麵.jpg",
+      "comment":"留言評論區"
     }
   ]
 }
