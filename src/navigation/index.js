@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import { StatusBar } from "native-base";
-import { extendTheme, useColorMode } from "native-base";
+import { extendTheme, useColorMode, Image, AspectRatio } from "native-base";
 import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
 
 import HomeScreen from "../screen/HomeScreen";
@@ -154,17 +154,25 @@ const HomeStack = () => {
         name="DetailScreen"
         component={DetailScreen}
         options={({ route }) => ({
-          // title: route.params.title,
+          title: route.params.name,
           // headerShown: false,
           // headerTintColor: colorMode == "light" ? "black" : "white",
-          // headerBackImageSource: route.params.photo,
           headerTitleStyle: {
             fontWeight: "400",
             fontSize: 20,
+            // color: "white",
           },
-          // headerTitle: () => (
-          //   <Image style={{ width: 50, height: 50 }} uri={route.params.photo} />
-          // ),
+          // headerStyle: {
+          //   backgroundColor: "yellow",
+          // },
+          // headerTitle: () => {
+          //   <AspectRatio w={100} h={200}>
+          //     <Image source={{ uri: route.params.photo }} />
+          //   </AspectRatio>;
+          // },
+          // headerBackImageSource: () => {
+          //   <Image source={{ uri: route.params.photo }} />;
+          // },
         })}
       />
       {/* <Stack.Screen
