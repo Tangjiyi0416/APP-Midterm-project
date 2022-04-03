@@ -108,5 +108,11 @@
       "comment": "留言評論區"
     }
   ],
-  "SearchList": [{ "title": "search", "photo": "", "label": "" }]
+  "SearchList": [
+    { "title": "search", 
+      "photo1": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/早午餐.jpg?raw=true",
+      "photo2":"https://github.com/Benson0409/APP-Midterm-project/blob/master/img/午晚餐.jpg?raw=true",
+      "photo3":"https://github.com/Benson0409/APP-Midterm-project/blob/master/img/甜點類.jpg?raw=true",
+      "photo4":"https://github.com/Benson0409/APP-Midterm-project/blob/master/img/飲料類.jpg?raw=true" 
+      }]
 }

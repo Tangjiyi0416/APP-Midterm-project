@@ -1,6 +1,6 @@
 import React from "react";
 import HomeData from "./HomeData";
-import { FlatList, SectionList, Text } from "native-base";
+import { Box, FlatList, SectionList, Text,VStack } from "native-base";
 const HomeList = ({ list, navigation }) => {
   const renderItem = ({ item }) => (
     <HomeData Home={item} navigation={navigation} />
