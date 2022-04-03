@@ -10,6 +10,7 @@ import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
 import HomeScreen from "../screen/HomeScreen";
 import DetailScreen from "../screen/DetailScreen";
 import SearchScreen from "../screen/SearchScreen";
+import SectionScreen from "../screen/SectionScreen";
 
 import { lightTheme, darkTheme } from "../Theme";
 
@@ -195,6 +196,20 @@ const SearchStack = () => {
             fontSize: 14,
           },
         }}
+      />
+      <Stack.Screen
+        name="SectionScreen"
+        component={SectionScreen}
+        options={({ route }) => ({
+          // title: route.params.name,
+          // headerShown: false,
+          // headerTintColor: colorMode == "light" ? "black" : "white",
+          headerTitleStyle: {
+            fontWeight: "400",
+            fontSize: 20,
+            color: "white",
+          },
+        })}
       />
     </Stack.Navigator>
   );

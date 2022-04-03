@@ -9,5 +9,8 @@ import {
   HStack,
   ScrollView,
 } from "native-base";
-const SectionScreen = () => {};
+const SectionScreen = ({ route }) => {
+  const { photo } = route.params;
+  return <Text>Hi</Text>;
+};
 export default SectionScreen;
