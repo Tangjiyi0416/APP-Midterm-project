@@ -16,6 +16,7 @@ const HomeData = ({ Home, navigation }) => {
         <Image />
         <Image />
       </HStack> */}
+
       <VStack>
         <Pressable onPress={() => navigation.navigate("DetailScreen", Home)}>
           <AspectRatio w="350" h="250">
