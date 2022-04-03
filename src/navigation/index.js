@@ -201,8 +201,9 @@ const SearchStack = () => {
         name="SectionScreen"
         component={SectionScreen}
         options={({ route }) => ({
-          // title: route.params.name,
+          title: route.params.name,
           // headerShown: false,
+          headerShadowVisible: false,
           // headerTintColor: colorMode == "light" ? "black" : "white",
           headerTitleStyle: {
             fontWeight: "400",

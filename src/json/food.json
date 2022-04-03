@@ -111,18 +111,76 @@
   "findList": [
     {
       "title": "search",
-      "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/早午餐.jpg?raw=true"
+      "label": "brunch",
+      "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/早午餐.jpg?raw=true",
+      "findDetail": [
+        {
+          "name": "JOY.S LOVE",
+          "address": "台北市大安區和平東路二段118巷4號",
+          "phone": "0987-020-554",
+          "time": "11:30 ~ 19:30",
+          "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/就是愛煎餅果子.jpeg?raw=true",
+          "star": 4
+        }
+      ]
     },
     {
       "title": "search",
-      "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/午晚餐.jpg?raw=true"
+      "label": "prandial",
+      "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/午晚餐.jpg?raw=true",
+      "findDetail": [
+        {
+          "name": "JOY.S LOVE",
+          "address": "台北市大安區和平東路二段118巷4號",
+          "phone": "0987-020-554",
+          "time": "11:30 ~ 19:30",
+          "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/就是愛煎餅果子.jpeg?raw=true",
+          "star": 4
+        },
+        {
+          "name": "梧貳",
+          "address": "台北市大安區和平東路二段118巷56號",
+          "phone": "0972-468-890",
+          "time": "11:00 ~ 14:00 / 17:00 ~ 20:00",
+          "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/梧貳WUERFOODS.jpeg?raw=true",
+          "star": 3
+        },
+        {
+          "name": "I’m pasta",
+          "address": "台北市大安區和平東路二段118巷50號",
+          "phone": "02 2735-3535",
+          "time": "11:00 ~ 15:30 / 17:00 ~ 20:30",
+          "photo": "https://raw.githubusercontent.com/Benson0409/APP-Midterm-project/master/img/im%20pasta.jpg.webp",
+          "star": 4
+        },
+        {
+          "name": "辛川屋",
+          "address": "台北市和平東路二段331號",
+          "phone": "02 2700-6131",
+          "time": "11:00 ~ 21:00",
+          "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/%E8%BE%9B%E5%B7%9D%E5%B1%8B.jpg?raw=true",
+          "star": 3
+        }
+      ]
     },
     {
       "title": "search",
-      "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/甜點類.jpg?raw=true"
+      "label": "dessert",
+      "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/甜點類.jpg?raw=true",
+      "findDetail": [
+        {
+          "name": "雪人兄弟",
+          "address": "台北市大安區大安路一段194號",
+          "phone": "02 2703-6563",
+          "time": "13:00 ~ 22:00(週一公休）",
+          "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/雪人兄弟.jpeg?raw=true",
+          "star": 4
+        }
+      ]
     },
     {
       "title": "search",
+      "label": "drink",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/飲料類.jpg?raw=true"
     }
   ]
