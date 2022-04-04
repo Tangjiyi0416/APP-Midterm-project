@@ -14,7 +14,7 @@ import {
 const SectionScreen = ({ route, section }) => {
   const { photo, title, findDetail, label } = route.params;
   return (
-    <Box mx="auto" mb="8" bg="white">
+    <Box mx="auto" mb="8" >
       <VStack mt={10}>
         <Pressable onPress={() => navigation.navigate("DetailScreen", section)}>
           <AspectRatio w="350" h="250">

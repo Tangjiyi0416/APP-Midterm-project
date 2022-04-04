@@ -11,6 +11,8 @@ import HomeScreen from "../screen/HomeScreen";
 import DetailScreen from "../screen/DetailScreen";
 import SearchScreen from "../screen/SearchScreen";
 import SectionScreen from "../screen/SectionScreen";
+import SettingsScreen from "../screen/SettingsScreen";
+import DisplaySettingScreen from "../screen/DisplaySettingScreen";
 
 import { lightTheme, darkTheme } from "../Theme";
 
@@ -19,24 +21,34 @@ import foodData from "../json/food.json";
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
-const Navigation = () => {
+const Navigation = () =>  {
+  const { colorMode } = useColorMode();
+  const MyTheme = colorMode == 'light' ? lightTheme : darkTheme;
   return (
-    <NavigationContainer>
+    <NavigationContainer theme={MyTheme} >
+      <StatusBar
+        barStyle={
+          colorMode == "light" ? "dark-content" : "light-content"
+        }
+        backgroundColor={
+          colorMode == "light" ? "white" : "black"
+        }
+      />
       <MyTabs />
     </NavigationContainer>
   );
-};
+}
 
 const MyTabs = () => {
-  // const { colors } = useTheme();
-  // const { colorMode } = useColorMode();
+  const { colors } = useTheme();
+  const { colorMode } = useColorMode();
 
   return (
     <Tab.Navigator
       initialRouteName="HomeStack"
       screenOptions={{
-        // tabBarInactiveTintColor: "#EC9976", //未被選中的顏色
-        tabBarActiveTintColor: "#EC9976", //選中的顏色
+        tabBarInactiveTintColor: colors.light400,
+        tabBarActiveTintColor: "#EC9976",
       }}
     >
       <Tab.Screen
@@ -83,7 +95,7 @@ const MyTabs = () => {
       />
       <Tab.Screen
         name="SettingsStack"
-        component={HomeStack}
+        component={SettingsStack}
         options={{
           headerShown: false,
           title: "Settings",
@@ -96,40 +108,40 @@ const MyTabs = () => {
   );
 };
 
-// const SettingsStack = () => {
-//   // const { colorMode } = useColorMode();
+const SettingsStack = () => {
+  const { colorMode } = useColorMode();
 
-//   return (
-//     <Stack.Navigator>
-//       <Stack.Screen
-//         name="Settings"
-//         component={SettingsScreen}
-//         options={{
-//           title: "Settings",
-//           headerTitleStyle: {
-//             fontWeight: "400",
-//             fontSize: 20,
-//           },
-//         }}
-//       />
-//       <Stack.Screen
-//         name="DisplaySetting"
-//         component={DisplaySettingScreen}
-//         options={{
-//           title: "Display",
-//           headerTintColor: colorMode == "light" ? "black" : "white",
-//           headerTitleStyle: {
-//             fontWeight: "400",
-//             fontSize: 20,
-//           },
-//         }}
-//       />
-//     </Stack.Navigator>
-//   );
-// };
+  return (
+    <Stack.Navigator>
+      <Stack.Screen
+        name="Settings"
+        component={SettingsScreen}
+        options={{
+          title: "Settings",
+          headerTitleStyle: {
+            fontWeight: "400",
+            fontSize: 20,
+          },
+        }}
+      />
+      <Stack.Screen
+        name="DisplaySetting"
+        component={DisplaySettingScreen}
+        options={{
+          title: "Display",
+          headerTintColor: colorMode == 'light' ? 'black' : 'white',
+          headerTitleStyle: {
+            fontWeight: "400",
+            fontSize: 20,
+          },
+        }}
+      />
+    </Stack.Navigator>
+  );
+};
 
 const HomeStack = () => {
-  // const { colorMode } = useColorMode();
+  const { colorMode } = useColorMode();
 
   return (
     <Stack.Navigator
@@ -158,29 +170,19 @@ const HomeStack = () => {
         options={({ route }) => ({
           title: route.params.name,
           // headerShown: false,
-          // headerTintColor: colorMode == "light" ? "black" : "white",
+          headerTintColor: colorMode == "light" ? "black" : "white",
           headerTitleStyle: {
             fontWeight: "400",
             fontSize: 20,
-            // color: "white",
           },
-          // headerStyle: {
-          //   backgroundColor: "yellow",
-          // },
-          // headerTitle: () => {
-          //   <AspectRatio w={100} h={200}>
-          //     <Image source={{ uri: route.params.photo }} />
-          //   </AspectRatio>;
-          // },
-          // headerBackImageSource: () => {
-          //   <Image source={{ uri: route.params.photo }} />;
-          // },
+       
         })}
       />
     </Stack.Navigator>
   );
 };
 const SearchStack = () => {
+  const { colorMode } = useColorMode();
   return (
     <Stack.Navigator>
       <Stack.Screen
@@ -204,7 +206,7 @@ const SearchStack = () => {
           title: route.params.name,
           // headerShown: false,
           headerShadowVisible: false,
-          // headerTintColor: colorMode == "light" ? "black" : "white",
+          headerTintColor: colorMode == "light" ? "black" : "white",
           headerTitleStyle: {
             fontWeight: "400",
             fontSize: 20,

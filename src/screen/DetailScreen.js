@@ -72,12 +72,12 @@ const DetailScreen = ({ route }) => {
           </HStack>
           <HStack ml={10} mb={2}>
             <MaterialCommunityIcons name="map-marker" color={"red"} size={25} />
-            <Text ml={3} fontSize={20}>
+            <Text ml={3} fontSize={18}>
               {address}
             </Text>
           </HStack>
           <HStack ml={10} mb={2}>
-            <MaterialCommunityIcons name="phone" color={"black"} size={25} />
+            <MaterialCommunityIcons name="phone" color={"gray"} size={25} />
             <Text ml={3} fontSize={20}>
               {phone}
             </Text>
@@ -93,7 +93,7 @@ const DetailScreen = ({ route }) => {
             </Text>
           </HStack>
           <HStack ml={10} mb={2}>
-            <MaterialIcons name="restaurant-menu" color={"black"} size={25} />
+            <MaterialIcons name="restaurant-menu" color={"gray"} size={25} />
             <Pressable onPress={() => Linking.openURL(url)}>
               <Text ml={3} fontSize={20}>
                 {menu}
