@@ -214,6 +214,36 @@ const SearchStack = () => {
           },
         })}
       />
+      <Stack.Screen
+        name="Section"
+        component={SectionScreen}
+        options={({ route }) => ({
+          title: route.params.name,
+          // headerShown: false,
+          headerShadowVisible: false,
+          // headerTintColor: colorMode == "light" ? "black" : "white",
+          headerTitleStyle: {
+            fontWeight: "400",
+            fontSize: 20,
+            color: "white",
+          },
+        })}
+      />
+      <Stack.Screen
+        name="DetailScreen"
+        component={DetailScreen}
+        options={({ route }) => ({
+          // title: route.params.name,
+          // headerShown: false,
+          headerShadowVisible: false,
+          // headerTintColor: colorMode == "light" ? "black" : "white",
+          headerTitleStyle: {
+            fontWeight: "400",
+            fontSize: 20,
+            color: "white",
+          },
+        })}
+      />
     </Stack.Navigator>
   );
 };
