@@ -62,7 +62,7 @@ const LoginScreen = ({ navigation }) => {
               _text={{
                 fontSize: "14",
                 fontWeight: "500",
-                color:"#EC9976",
+                color:"#6200EE",
               }}
               alignSelf="flex-end"
               mt="1"
@@ -70,7 +70,7 @@ const LoginScreen = ({ navigation }) => {
               忘記密碼
             </Link>
           </FormControl>
-          <Button mt="2" colorScheme='orange'>
+          <Button mt="2" colorScheme='violet'>
             <Text color={"white"} fontSize="14" fontWeight="600">登入</Text>
           </Button>
           <HStack mt="6" justifyContent="center">
@@ -88,7 +88,7 @@ const LoginScreen = ({ navigation }) => {
                 navigation.navigate("SignUpScreen");
               }}
             >
-              <Text color="#EC9976" fontWeight={"medium"} fontSize="14" ml={2}>
+              <Text color="#6200EE" fontWeight={"medium"} fontSize="14" ml={2}>
                 註冊
               </Text>
             </Pressable>

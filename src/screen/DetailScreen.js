@@ -15,6 +15,8 @@ import {
   Button,
   HStack,
   Pressable,
+  TextArea,
+  Toast,
 } from "native-base";
 const DetailScreen = ({ route }) => {
   const {
@@ -48,7 +50,7 @@ const DetailScreen = ({ route }) => {
             alt="store"
             //   borderRadius={10}
             //   blurRadius={6}
-            //   opacity={100}
+            opacity={60}
           />
         </AspectRatio>
 
@@ -59,7 +61,7 @@ const DetailScreen = ({ route }) => {
             </Box>
 
             <Box justifyContent="flex-end" pb={1}>
-              <HStack>
+              <HStack ml={5}>
                 <Starbar star={star} />
                 <Text>
                   {star != null ? (
@@ -152,7 +154,7 @@ const DetailScreen = ({ route }) => {
             <Box justifyContent="flex-end" pb={1.5}>
               <MaterialCommunityIcons
                 name="comment-text"
-                color={"#EC9976"}
+                color={"#6200EE"}
                 size={25}
               />
             </Box>
@@ -162,6 +164,12 @@ const DetailScreen = ({ route }) => {
               </Text>
             </Box>
           </HStack>
+          <Box alignItems="center" w="100%">
+          <TextArea h={200} placeholder="想要說些什麼？" w="75%" maxW="300" mb={10} borderColor={"gray.400"}/>
+          </Box>
+          <Button onPress={() => Toast.show({description: "已送出"})} mt="2" colorScheme='violet' width="60%" alignSelf="center" mb={20}>
+            <Text color={"white"} fontSize="14" fontWeight="600">確認送出</Text>
+          </Button>
         </Box>
       </Box>
     </ScrollView>

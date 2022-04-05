@@ -10,6 +10,7 @@ import {
   WarningOutlineIcon,
   KeyboardAvoidingView,
   Button,
+  Toast,
 } from "native-base";
 
 const SignUpScreen = () => {
@@ -106,7 +107,7 @@ const SignUpScreen = () => {
             onChangeText={(text) => setTel(text)}
           />
         </FormControl>
-        <Button mt="2" colorScheme='orange' width="60%" alignSelf="center">
+        <Button onPress={() => Toast.show({description: "已提交"})}mt="2" colorScheme='violet' width="60%" alignSelf="center">
             <Text color={"white"} fontSize="14" fontWeight="600">提交</Text>
           </Button>
       </VStack>

@@ -52,7 +52,7 @@ const MyTabs = () => {
       initialRouteName="HomeStack"
       screenOptions={{
         tabBarInactiveTintColor: colors.light400,
-        tabBarActiveTintColor: "#EC9976",
+        tabBarActiveTintColor: "#9a53ff",
       }}
     >
       <Tab.Screen

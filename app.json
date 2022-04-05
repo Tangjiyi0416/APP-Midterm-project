@@ -6,9 +6,9 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/ntuelife.jpg",
+      "image": "./assets/國北生活圈.jpg",
       "resizeMode": "contain",
-      "backgroundColor": "#faba9f"
+      "backgroundColor": "#f3bbff"
       
     },
     "updates": {

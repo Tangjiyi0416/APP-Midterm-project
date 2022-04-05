@@ -18,7 +18,7 @@ const SearchData = ({ Search, navigation }) => {
     <Box  mb={5}>
       <VStack alignSelf="center">
         <Pressable onPress={() => navigation.navigate("SectionScreen", Search)}>
-          <AspectRatio mt={3} w="320" h="200">
+          <AspectRatio mt={3} w="320" h="180">
             <Image
               source={{ uri: Search.photo }}
               alt="store"
