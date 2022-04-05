@@ -1,5 +1,5 @@
-import React from "react";
-import { Linking } from "react-native";
+import React, { useState } from "react";
+import { Linking, TouchableOpacity } from "react-native";
 import Starbar from "../star/starabr";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
@@ -38,6 +38,7 @@ const DetailScreen = ({ route }) => {
     comment,
     url,
   } = route.params;
+  const [Like, setLike] = useState(false);
   return (
     <ScrollView>
       <Box>
@@ -68,6 +69,23 @@ const DetailScreen = ({ route }) => {
                   ) : null}
                 </Text>
               </HStack>
+            </Box>
+            <Box justifyContent="flex-end" pb={1} ml={140}>
+              <TouchableOpacity onPress={() => setLike(!Like)}>
+                {Like ? (
+                  <MaterialCommunityIcons
+                    name="cards-heart"
+                    color={"red"}
+                    size={30}
+                  />
+                ) : (
+                  <MaterialCommunityIcons
+                    name="heart-outline"
+                    color={"gray"}
+                    size={30}
+                  />
+                )}
+              </TouchableOpacity>
             </Box>
           </HStack>
           <HStack ml={10} mb={2}>

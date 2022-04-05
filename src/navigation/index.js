@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavigationContainer, useTheme } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
-import { StatusBar } from "native-base";
-import { extendTheme, useColorMode, Image, AspectRatio } from "native-base";
+import {
+  StatusBar,
+  extendTheme,
+  useColorMode,
+  Image,
+  AspectRatio,
+} from "native-base";
+import { TouchableOpacity } from "react-native";
 import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
 
 import HomeScreen from "../screen/HomeScreen";
