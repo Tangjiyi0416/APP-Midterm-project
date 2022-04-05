@@ -32,7 +32,7 @@ const LoginScreen = ({ navigation }) => {
             color: "warmGray.50",
           }}
         >
-          Welcome
+          登入您的帳號
         </Heading>
         <Heading
           mt="1"
@@ -43,49 +43,53 @@ const LoginScreen = ({ navigation }) => {
           fontWeight="medium"
           size="xs"
         >
-          Sign in to continue!
+         
         </Heading>
 
-        <VStack space={3} mt="5">
+        <VStack space={3} mt="5" >
           <FormControl>
-            <FormControl.Label>Email ID</FormControl.Label>
+            <FormControl.Label>
+              <Text  fontSize="18" fontWeight="600">電子郵件</Text>
+              </FormControl.Label>
             <Input />
           </FormControl>
           <FormControl>
-            <FormControl.Label>Password</FormControl.Label>
+            <FormControl.Label>
+            <Text  fontSize="18" fontWeight="600">密碼</Text>
+            </FormControl.Label>
             <Input type="password" />
             <Link
               _text={{
-                fontSize: "xs",
+                fontSize: "14",
                 fontWeight: "500",
-                color: "indigo.500",
+                color:"#EC9976",
               }}
               alignSelf="flex-end"
               mt="1"
             >
-              Forget Password?
+              忘記密碼
             </Link>
           </FormControl>
-          <Button mt="2" colorScheme="indigo">
-            Sign in
+          <Button mt="2" colorScheme='orange'>
+            <Text color={"white"} fontSize="14" fontWeight="600">登入</Text>
           </Button>
           <HStack mt="6" justifyContent="center">
             <Text
-              fontSize="sm"
+              fontSize="14"
               color="coolGray.600"
               _dark={{
                 color: "warmGray.200",
               }}
             >
-              I'm a new user.
+              尚未有帳號
             </Text>
             <Pressable
               onPress={() => {
                 navigation.navigate("SignUpScreen");
               }}
             >
-              <Text color="indigo.500" fontWeight={"medium"} fontSize="sm">
-                Sign Up
+              <Text color="#EC9976" fontWeight={"medium"} fontSize="14" ml={2}>
+                註冊
               </Text>
             </Pressable>
           </HStack>
