@@ -174,7 +174,7 @@ const SettingsStack = () => {
 
 const HomeStack = () => {
   const { colorMode } = useColorMode();
-
+  const [Like, setLike] = useState(false);
   return (
     <Stack.Navigator
     // screenOptions={{
@@ -207,6 +207,23 @@ const HomeStack = () => {
             fontWeight: "400",
             fontSize: 20,
           },
+          headerRight: () => (
+            <TouchableOpacity onPress={() => setLike(!Like)}>
+              {Like ? (
+                <MaterialCommunityIcons
+                  name="cards-heart"
+                  color={"red"}
+                  size={30}
+                />
+              ) : (
+                <MaterialCommunityIcons
+                  name="heart-outline"
+                  color={"gray"}
+                  size={30}
+                />
+              )}
+            </TouchableOpacity>
+          ),
         })}
       />
     </Stack.Navigator>

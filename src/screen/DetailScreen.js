@@ -38,7 +38,7 @@ const DetailScreen = ({ route }) => {
     comment,
     url,
   } = route.params;
-  const [Like, setLike] = useState(false);
+
   return (
     <ScrollView>
       <Box>
@@ -69,23 +69,6 @@ const DetailScreen = ({ route }) => {
                   ) : null}
                 </Text>
               </HStack>
-            </Box>
-            <Box justifyContent="flex-end" pb={1}>
-              <TouchableOpacity onPress={() => setLike(!Like)}>
-                {Like ? (
-                  <MaterialCommunityIcons
-                    name="cards-heart"
-                    color={"red"}
-                    size={30}
-                  />
-                ) : (
-                  <MaterialCommunityIcons
-                    name="heart-outline"
-                    color={"gray"}
-                    size={30}
-                  />
-                )}
-              </TouchableOpacity>
             </Box>
           </HStack>
           <HStack ml={10} mb={2}>
