@@ -165,10 +165,26 @@ const DetailScreen = ({ route }) => {
             </Box>
           </HStack>
           <Box alignItems="center" w="100%">
-          <TextArea h={200} placeholder="想要說些什麼？" w="75%" maxW="300" mb={10} borderColor={"gray.400"}/>
+            <TextArea
+              h={200}
+              placeholder="想要說些什麼？"
+              w="75%"
+              maxW="300"
+              mb={10}
+              borderColor={"gray.400"}
+            />
           </Box>
-          <Button onPress={() => Toast.show({description: "已送出"})} mt="2" colorScheme='violet' width="60%" alignSelf="center" mb={20}>
-            <Text color={"white"} fontSize="14" fontWeight="600">確認送出</Text>
+          <Button
+            onPress={() => Toast.show({ description: "已送出" })}
+            mt="2"
+            colorScheme="violet"
+            width="60%"
+            alignSelf="center"
+            mb={20}
+          >
+            <Text color={"white"} fontSize="14" fontWeight="600">
+              確認送出
+            </Text>
           </Button>
         </Box>
       </Box>

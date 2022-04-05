@@ -88,7 +88,7 @@ const SignUpScreen = () => {
             必須填寫有效密碼
           </FormControl.ErrorMessage>
         </FormControl>
-        <FormControl mb={5}>
+        <FormControl mb={5} isRequired>
           <FormControl.Label _text={formLabelStyle}>住址</FormControl.Label>
           <Input
             variant="underlined"
@@ -96,9 +96,8 @@ const SignUpScreen = () => {
             value={adrs}
             onChangeText={(text) => setAdrs(text)}
           />
-          
         </FormControl>
-        <FormControl mb={5}>
+        <FormControl mb={5} isRequired>
           <FormControl.Label _text={formLabelStyle}>電話號碼</FormControl.Label>
           <Input
             variant="underlined"
@@ -107,9 +106,18 @@ const SignUpScreen = () => {
             onChangeText={(text) => setTel(text)}
           />
         </FormControl>
-        <Button onPress={() => Toast.show({description: "已提交"})}mt="2" colorScheme='violet' width="60%" alignSelf="center">
-            <Text color={"white"} fontSize="14" fontWeight="600">提交</Text>
-          </Button>
+        <Button
+          onPress={() => Toast.show({ description: "已提交" })}
+          mt="2"
+          colorScheme="violet"
+          width="60%"
+          alignSelf="center"
+          mb={5}
+        >
+          <Text color={"white"} fontSize="14" fontWeight="600">
+            確認提交
+          </Text>
+        </Button>
       </VStack>
     </ScrollView>
   );
