@@ -14,18 +14,17 @@ const ListItem = ({ title, navigation, destination,icon }) => {
           }}
         >
           <HStack
-           
             _dark={{
-                bg: "blueGray.900",
+               
               }}
-            _light={{ bg: "white" }}
+            _light={{}}
                 py="5"
-                mt={5}
+                
            >
-           <Box ml={5} mr={15}>
+           <Box ml={5} mr={15} mt={0.5} >
                <FontAwesome5 name="user-circle" color="#EC9976" size={25} />
            </Box>
-            <Text fontSize={20}>{title}</Text>
+            <Text fontSize={20} >{title}</Text>
           </HStack>
         </Pressable>
       );
@@ -39,13 +38,13 @@ const ListItem = ({ title, navigation, destination,icon }) => {
         >
           <HStack
            _dark={{
-            bg: "blueGray.900",
+            
           }}
-        _light={{ bg: "white" }}
+        _light={{}}
             py="5"
             mt={5}
            >
-           <Box ml={5} mr={15}>
+           <Box ml={5} mr={15} mt={1}>
                <FontAwesome5 name="user-edit" color="#EC9976" size={20} />
            </Box>
             <Text fontSize={20}>{title}</Text>
@@ -62,13 +61,13 @@ const ListItem = ({ title, navigation, destination,icon }) => {
         >
           <HStack
             _dark={{
-                bg: "blueGray.900",
+               
               }}
-            _light={{ bg: "white" }}
+            _light={{}}
                 py="5"
                 mt={5}
            >
-           <Box ml={5} mr={15}>
+           <Box ml={5} mr={15} mt={0.5}>
                <MaterialIcons name="text-fields" color="#EC9976" size={25} />
            </Box>
             <Text fontSize={20}>{title}</Text>
@@ -85,13 +84,13 @@ const ListItem = ({ title, navigation, destination,icon }) => {
         >
           <HStack
             _dark={{
-                bg: "blueGray.900",
+                
               }}
-            _light={{ bg: "white" }}
+            _light={{}}
                 py="5"
                 mt={5}
            >
-           <Box ml={5} mr={15}>
+           <Box ml={5} mr={15} mt={0.5}>
                <MaterialCommunityIcons name="translate" color="#EC9976" size={25} />
            </Box>
             <Text fontSize={20}>{title}</Text>
@@ -108,13 +107,13 @@ const ListItem = ({ title, navigation, destination,icon }) => {
         >
           <HStack
            _dark={{
-            bg: "blueGray.900",
+            
           }}
-        _light={{ bg: "white" }}
+        _light={{}}
             py="5"
             mt={5}
            >
-           <Box ml={5} mr={15}>
+           <Box ml={5} mr={15} mt={0.5}>
                <MaterialCommunityIcons name="alarm-light" color="#EC9976" size={25} />
            </Box>
             <Text fontSize={20}>{title}</Text>

@@ -53,7 +53,7 @@ const MyTabs = () => {
         component={HomeStack}
         options={{
           headerShown: false,
-          title: "Home",
+          title: "首頁",
 
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="home" color={color} size={26} />
@@ -65,7 +65,7 @@ const MyTabs = () => {
         component={SearchStack}
         options={{
           headerShown: false,
-          title: "Search",
+          title: "搜尋",
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons
               name="feature-search-outline"
@@ -80,7 +80,7 @@ const MyTabs = () => {
         component={HomeStack}
         options={{
           headerShown: false,
-          title: "Favorite",
+          title: "最愛",
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons
               name="cards-heart"
@@ -95,7 +95,7 @@ const MyTabs = () => {
         component={SettingsStack}
         options={{
           headerShown: false,
-          title: "Settings",
+          title: "設定",
           tabBarIcon: ({ color }) => (
             <SimpleLineIcons name="settings" color={color} size={26} />
           ),
@@ -138,7 +138,7 @@ const SettingsStack = () => {
         name="LoginScreen"
         component={LoginScreen}
         options={{
-          title: "登陸頁面",
+          title: "登錄頁面",
           headerShadowVisible: false,
           headerTintColor: colorMode == "light" ? "black" : "white",
           headerTitleStyle: {
