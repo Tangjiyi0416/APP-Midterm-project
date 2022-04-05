@@ -16,7 +16,7 @@ const SettingsScreen = ({ navigation }) => {
       <ListItem title="字體大小" navigation={navigation} icon="icon3" />
       <ListItem title="語言轉換" navigation={navigation} icon="icon4" />
       <ListItem
-        title="亮暗主題"
+        title="深淺主題"
         navigation={navigation}
         destination="DisplaySetting"
         icon="icon5"

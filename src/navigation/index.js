@@ -114,7 +114,8 @@ const SettingsStack = () => {
         name="Settings"
         component={SettingsScreen}
         options={{
-          title: "Settings",
+          title: "設定",
+          headerShadowVisible: false,
           headerTitleStyle: {
             fontWeight: "400",
             fontSize: 20,
@@ -125,7 +126,7 @@ const SettingsStack = () => {
         name="DisplaySetting"
         component={DisplaySettingScreen}
         options={{
-          title: "Display",
+          title: "深淺主題",
           headerTintColor: colorMode == "light" ? "black" : "white",
           headerTitleStyle: {
             fontWeight: "400",
@@ -137,7 +138,8 @@ const SettingsStack = () => {
         name="LoginScreen"
         component={LoginScreen}
         options={{
-          title: "Display",
+          title: "登陸頁面",
+          headerShadowVisible: false,
           headerTintColor: colorMode == "light" ? "black" : "white",
           headerTitleStyle: {
             fontWeight: "400",
