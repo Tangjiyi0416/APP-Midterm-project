@@ -14,6 +14,7 @@ import SectionScreen from "../screen/SectionScreen";
 import SettingsScreen from "../screen/SettingsScreen";
 import DisplaySettingScreen from "../screen/DisplaySettingScreen";
 import LoginScreen from "../screen/LoginScreen";
+import SignUpScreen from "../screen/SignUpScreen";
 
 import { lightTheme, darkTheme } from "../Theme";
 
@@ -127,6 +128,7 @@ const SettingsStack = () => {
         component={DisplaySettingScreen}
         options={{
           title: "深淺主題",
+          headerShadowVisible: false,
           headerTintColor: colorMode == "light" ? "black" : "white",
           headerTitleStyle: {
             fontWeight: "400",
@@ -139,6 +141,19 @@ const SettingsStack = () => {
         component={LoginScreen}
         options={{
           title: "登陸頁面",
+          headerShadowVisible: false,
+          headerTintColor: colorMode == "light" ? "black" : "white",
+          headerTitleStyle: {
+            fontWeight: "400",
+            fontSize: 20,
+          },
+        }}
+      />
+      <Stack.Screen
+        name="SignUpScreen"
+        component={SignUpScreen}
+        options={{
+          title: "註冊頁面",
           headerShadowVisible: false,
           headerTintColor: colorMode == "light" ? "black" : "white",
           headerTitleStyle: {
