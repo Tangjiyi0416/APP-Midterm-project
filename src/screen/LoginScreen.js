@@ -18,28 +18,29 @@ const LoginScreen = () => {
   const [emailIsError, setEmailIsError] = useState(true);
   const [adrs, setAdrs] = useState("");
   const [tel, setTel] = useState("");
+  const [password, setpassword] = useState("");
+  const [passwordIsError, setpasswordIsError] = useState(true);
 
   const { colorMode } = useColorMode();
   const formLabelStyle = {
     color: colorMode == "light" ? "muted.700" : "white",
-    fontSize: "xs",
+    fontSize: "18",
     fontWeight: 600,
   };
   const focusInputStyle = {
     borderColor: colorMode == "light" ? "muted.700" : "white",
+    fontSize: "16",
   };
 
   const nameRegex = /^[a-zA-Z]+\w*$/;
   const emailRegex = /\w{3,}@[a-zA-Z_]+\.[a-zA-Z]{2,5}/;
-
+  const passwordRegex=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,15}$/;
   return (
     <ScrollView>
-      <VStack space={2} mt={5} width="80%" alignSelf="center">
-        <Text textAlign="center" fontSize="2xl" pb="4">
-          GENERAL SETTINGS
-        </Text>
+      <VStack space={2} mt={10} width="80%" alignSelf="center">
+        
         <FormControl mb={5} isRequired isInvalid={nameIsError}>
-          <FormControl.Label _text={formLabelStyle}>Name</FormControl.Label>
+          <FormControl.Label _text={formLabelStyle}>姓名</FormControl.Label>
           <Input
             variant="underlined"
             _focus={focusInputStyle}
@@ -51,11 +52,11 @@ const LoginScreen = () => {
             }}
           />
           <FormControl.ErrorMessage leftIcon={<WarningOutlineIcon size="xs" />}>
-            You must enter a valid name.
+            必須填寫有效名稱
           </FormControl.ErrorMessage>
         </FormControl>
         <FormControl mb={5} isRequired isInvalid={emailIsError}>
-          <FormControl.Label _text={formLabelStyle}>Email</FormControl.Label>
+          <FormControl.Label _text={formLabelStyle}>電子郵件</FormControl.Label>
           <Input
             variant="underlined"
             _focus={focusInputStyle}
@@ -67,11 +68,27 @@ const LoginScreen = () => {
             }}
           />
           <FormControl.ErrorMessage leftIcon={<WarningOutlineIcon size="xs" />}>
-            You must enter a valid email.
+          必須填寫有效電子郵件
+          </FormControl.ErrorMessage>
+        </FormControl>
+        <FormControl mb={5} isRequired isInvalid={passwordIsError}>
+          <FormControl.Label _text={formLabelStyle}>密碼</FormControl.Label>
+          <Input
+            variant="underlined"
+            _focus={focusInputStyle}
+            value={password}
+            onChangeText={(text) => {
+              setpassword(text);
+              if (text.match(passwordRegex)) setpasswordIsError(false);
+              else setpasswordIsError(true);
+            }}
+          />
+          <FormControl.ErrorMessage leftIcon={<WarningOutlineIcon size="xs" />}>
+            必須填寫有效密碼
           </FormControl.ErrorMessage>
         </FormControl>
         <FormControl mb={5}>
-          <FormControl.Label _text={formLabelStyle}>Address</FormControl.Label>
+          <FormControl.Label _text={formLabelStyle}>住址</FormControl.Label>
           <Input
             variant="underlined"
             _focus={focusInputStyle}
@@ -80,7 +97,7 @@ const LoginScreen = () => {
           />
         </FormControl>
         <FormControl mb={5}>
-          <FormControl.Label _text={formLabelStyle}>Tel</FormControl.Label>
+          <FormControl.Label _text={formLabelStyle}>電話號碼</FormControl.Label>
           <Input
             variant="underlined"
             _focus={focusInputStyle}
