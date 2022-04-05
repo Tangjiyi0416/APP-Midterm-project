@@ -9,6 +9,7 @@ import {
   Input,
   WarningOutlineIcon,
   KeyboardAvoidingView,
+  Button,
 } from "native-base";
 
 const SignUpScreen = () => {
@@ -94,6 +95,7 @@ const SignUpScreen = () => {
             value={adrs}
             onChangeText={(text) => setAdrs(text)}
           />
+          
         </FormControl>
         <FormControl mb={5}>
           <FormControl.Label _text={formLabelStyle}>電話號碼</FormControl.Label>
@@ -104,6 +106,9 @@ const SignUpScreen = () => {
             onChangeText={(text) => setTel(text)}
           />
         </FormControl>
+        <Button mt="2" colorScheme='orange' width="60%" alignSelf="center">
+            <Text color={"white"} fontSize="14" fontWeight="600">提交</Text>
+          </Button>
       </VStack>
     </ScrollView>
   );

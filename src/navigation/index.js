@@ -146,7 +146,7 @@ const SettingsStack = () => {
         name="LoginScreen"
         component={LoginScreen}
         options={{
-          title: "登錄頁面",
+          title: "登錄",
           headerShadowVisible: false,
           headerTintColor: colorMode == "light" ? "black" : "white",
           headerTitleStyle: {
@@ -159,7 +159,7 @@ const SettingsStack = () => {
         name="SignUpScreen"
         component={SignUpScreen}
         options={{
-          title: "註冊頁面",
+          title: "註冊",
           headerShadowVisible: false,
           headerTintColor: colorMode == "light" ? "black" : "white",
           headerTitleStyle: {
