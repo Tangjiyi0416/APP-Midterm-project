@@ -70,7 +70,7 @@ const DetailScreen = ({ route }) => {
                 </Text>
               </HStack>
             </Box>
-            <Box justifyContent="flex-end" pb={1} ml={140}>
+            <Box justifyContent="flex-end" pb={1}>
               <TouchableOpacity onPress={() => setLike(!Like)}>
                 {Like ? (
                   <MaterialCommunityIcons
