@@ -13,6 +13,7 @@ import SearchScreen from "../screen/SearchScreen";
 import SectionScreen from "../screen/SectionScreen";
 import SettingsScreen from "../screen/SettingsScreen";
 import DisplaySettingScreen from "../screen/DisplaySettingScreen";
+import LoginScreen from "../screen/LoginScreen";
 
 import { lightTheme, darkTheme } from "../Theme";
 
@@ -21,23 +22,19 @@ import foodData from "../json/food.json";
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
-const Navigation = () =>  {
+const Navigation = () => {
   const { colorMode } = useColorMode();
-  const MyTheme = colorMode == 'light' ? lightTheme : darkTheme;
+  const MyTheme = colorMode == "light" ? lightTheme : darkTheme;
   return (
-    <NavigationContainer theme={MyTheme} >
+    <NavigationContainer theme={MyTheme}>
       <StatusBar
-        barStyle={
-          colorMode == "light" ? "dark-content" : "light-content"
-        }
-        backgroundColor={
-          colorMode == "light" ? "white" : "black"
-        }
+        barStyle={colorMode == "light" ? "dark-content" : "light-content"}
+        backgroundColor={colorMode == "light" ? "white" : "black"}
       />
       <MyTabs />
     </NavigationContainer>
   );
-}
+};
 
 const MyTabs = () => {
   const { colors } = useTheme();
@@ -129,7 +126,19 @@ const SettingsStack = () => {
         component={DisplaySettingScreen}
         options={{
           title: "Display",
-          headerTintColor: colorMode == 'light' ? 'black' : 'white',
+          headerTintColor: colorMode == "light" ? "black" : "white",
+          headerTitleStyle: {
+            fontWeight: "400",
+            fontSize: 20,
+          },
+        }}
+      />
+      <Stack.Screen
+        name="LoginScreen"
+        component={LoginScreen}
+        options={{
+          title: "Display",
+          headerTintColor: colorMode == "light" ? "black" : "white",
           headerTitleStyle: {
             fontWeight: "400",
             fontSize: 20,
@@ -175,7 +184,6 @@ const HomeStack = () => {
             fontWeight: "400",
             fontSize: 20,
           },
-       
         })}
       />
     </Stack.Navigator>
