@@ -15,7 +15,7 @@ import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityI
 import Starbar from "../star/starabr";
 const SearchData = ({ Search, navigation }) => {
   return (
-    <Box bg={"white"} mb={5}>
+    <Box  mb={5}>
       <VStack alignSelf="center">
         <Pressable onPress={() => navigation.navigate("SectionScreen", Search)}>
           <AspectRatio mt={3} w="320" h="200">

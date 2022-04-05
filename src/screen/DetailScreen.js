@@ -85,7 +85,7 @@ const DetailScreen = ({ route }) => {
           <HStack ml={10} mb={2}>
             <MaterialCommunityIcons
               name="clock-time-eight"
-              color={"black"}
+              color={"gray"}
               size={25}
             />
             <Text ml={3} fontSize={20}>
