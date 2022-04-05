@@ -11,7 +11,7 @@ const SearchList = ({ list, navigation }) => {
       ListHeaderComponent={
         <>
           <HStack mt={10} justifyContent="center">
-            <Box mr={2} mt={1}>
+            <Box mr={2} mt={2.5}>
               <MaterialIcons name="search" color={"#9a53ff"} size={28} />
             </Box>
             <Input
