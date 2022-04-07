@@ -13,6 +13,14 @@ import {
 import { TouchableOpacity } from "react-native";
 import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
 
+// import {
+//   AnimatedTabBarNavigator,
+//   DotSize, // optional
+//   TabElementDisplayOptions, // optional
+//   TabButtonLayout, // optional
+//   IAppearanceOptions, // optional
+// } from "react-native-animated-nav-tab-bar";
+
 import HomeScreen from "../screen/HomeScreen";
 import DetailScreen from "../screen/DetailScreen";
 import SearchScreen from "../screen/SearchScreen";
@@ -28,6 +36,7 @@ import foodData from "../json/food.json";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
+//const Tab = AnimatedTabBarNavigator();
 
 const Navigation = () => {
   const { colorMode } = useColorMode();
@@ -62,7 +71,7 @@ const MyTabs = () => {
           headerShown: false,
           title: "首頁",
 
-          tabBarIcon: ({ color }) => (
+          tabBarIcon: ({ color, focused, size }) => (
             <MaterialCommunityIcons name="home" color={color} size={26} />
           ),
         }}
