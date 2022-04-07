@@ -21,6 +21,20 @@ const SectionScreen = ({
 
   // if ({ label } == "brunch") {
   return (
+<<<<<<< HEAD
+  <ScrollView>
+    <Box mx="auto" mb="8" >
+      <VStack mt={10}>
+        <Pressable onPress={() => navigation.navigate("DetailScreen", section)}>
+          <AspectRatio w="350" h="250">
+            <Image
+              source={{ uri: foodData.findList[0].findDetail[0].photo }}
+              alt="store"
+              borderRadius={10}
+            />
+          </AspectRatio>
+        </Pressable>
+=======
     <ScrollView>
       <Box mx="auto" mb="8">
         <VStack mt={10}>
@@ -35,6 +49,7 @@ const SectionScreen = ({
               />
             </AspectRatio>
           </Pressable>
+>>>>>>> eb94635181419e482ab2b96ea77196ac8f95c704
 
           <Text fontWeight="bold" fontSize="18">
             {foodData.findList[0].findDetail[0].name}
@@ -73,6 +88,13 @@ const SectionScreen = ({
           <Text color={"#808080"}>
             {foodData.findList[0].findDetail[1].address}
           </Text>
+<<<<<<< HEAD
+        </HStack>
+      </VStack>
+    </Box>
+    </ScrollView>
+    
+=======
           <HStack>
             <Starbar star={foodData.findList[0].findDetail[1].star} />
             <Text>
@@ -87,6 +109,7 @@ const SectionScreen = ({
         </VStack>
       </Box>
     </ScrollView>
+>>>>>>> eb94635181419e482ab2b96ea77196ac8f95c704
   );
   // } else if ({ label } == "prandial") {
   //   return (
