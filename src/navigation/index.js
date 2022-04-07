@@ -12,6 +12,7 @@ import {
 } from "native-base";
 import { TouchableOpacity } from "react-native";
 import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
+import { BlurView } from "expo-blur";
 
 // import {
 //   AnimatedTabBarNavigator,
@@ -62,6 +63,16 @@ const MyTabs = () => {
       screenOptions={{
         tabBarInactiveTintColor: colors.light400,
         tabBarActiveTintColor: "#9a53ff",
+        // tabBarStyle: {
+        //   height: 60,
+        //   // position: "absolute",
+        //   bottom: 0,
+        //   margin: 5,
+        //   borderRadius: 15,
+        //   backgroundColor: "white",
+        //   // headerShadowVisible: false,
+        // },
+        // tabBarBackground: () => <BlurView intensity={300} />,
       }}
     >
       <Tab.Screen
@@ -215,7 +226,7 @@ const HomeStack = ({ navigation: { goBack } }) => {
           headerTitleStyle: {
             fontWeight: "400",
             fontSize: 20,
-            color:"white",
+            color: "white",
           },
           headerRight: () => (
             <TouchableOpacity onPress={() => setLike(!Like)}>

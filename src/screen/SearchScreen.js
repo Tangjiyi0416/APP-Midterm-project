@@ -7,7 +7,7 @@ import { Image } from "react-native-svg";
 
 const SearchScreen = ({ navigation }) => {
   return (
-    <Box >
+    <Box>
       <SearchList list={foodData.findList} navigation={navigation} />
     </Box>
   );
