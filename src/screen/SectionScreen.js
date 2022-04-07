@@ -21,6 +21,7 @@ const SectionScreen = ({
 
   // if ({ label } == "brunch") {
   return (
+  <ScrollView>
     <Box mx="auto" mb="8" >
       <VStack mt={10}>
         <Pressable onPress={() => navigation.navigate("DetailScreen", section)}>
@@ -81,6 +82,8 @@ const SectionScreen = ({
         </HStack>
       </VStack>
     </Box>
+    </ScrollView>
+    
   );
   // } else if ({ label } == "prandial") {
   //   return (

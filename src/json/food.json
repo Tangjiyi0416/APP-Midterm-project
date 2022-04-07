@@ -127,7 +127,15 @@
           "address": "台北市和平東路二段331巷43弄42號",
           "phone": "0987-020-554",
           "time": "11:30 ~ 19:30",
-          "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/Mama’s%20鐵鍋早午餐.jpg?raw=true",
+          "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/Mama鐵鍋早午餐.jpg?raw=true",
+          "star": 4
+        },
+        {
+          "name": "Mama’s 鐵鍋早午餐",
+          "address": "台北市和平東路二段331巷43弄42號",
+          "phone": "0987-020-554",
+          "time": "11:30 ~ 19:30",
+          "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/Mama鐵鍋早午餐.jpg?raw=true",
           "star": 4
         }
         
