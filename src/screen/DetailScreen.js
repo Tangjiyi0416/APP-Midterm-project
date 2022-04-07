@@ -55,24 +55,23 @@ const DetailScreen = ({ route }) => {
         </AspectRatio>
 
         <Box>
-          <HStack mt={30} ml={10} mb={5}>
+          <HStack mt={30} ml={10} >
             <Box justifyContent="flex-end">
               <Text fontSize={28}>{name}</Text>
             </Box>
-
-            <Box justifyContent="flex-end" pb={1}>
-              <HStack ml={5}>
-                <Starbar star={star} />
-                <Text>
-                  {star != null ? (
-                    <Text>
-                      {star}.0 <Text color={"#808080"}>/ 5.0</Text>
-                    </Text>
-                  ) : null}
-                </Text>
-              </HStack>
-            </Box>
           </HStack>
+          <Box  pb={1}>
+                <HStack ml={10} mb={5}>
+                  <Starbar star={star} />
+                  <Text>
+                    {star != null ? (
+                      <Text>
+                        {star}.0 <Text color={"#808080"}>/ 5.0</Text>
+                      </Text>
+                    ) : null}
+                  </Text>
+                </HStack>
+              </Box>
           <HStack ml={10} mb={2}>
             <MaterialCommunityIcons name="map-marker" color={"red"} size={25} />
             <Text ml={3} fontSize={18}>
