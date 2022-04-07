@@ -51,6 +51,35 @@ const SectionScreen = ({
           </Text>
         </HStack>
       </VStack>
+      <VStack mt={10}>
+        <Pressable onPress={() => navigation.navigate("DetailScreen", section)}>
+          <AspectRatio w="350" h="250">
+            <Image
+              source={{ uri: foodData.findList[0].findDetail[1].photo }}
+              alt="store"
+              borderRadius={10}
+            />
+          </AspectRatio>
+        </Pressable>
+
+        <Text fontWeight="bold" fontSize="18">
+          {foodData.findList[0].findDetail[1].name}
+        </Text>
+        <Text color={"#808080"}>
+          {foodData.findList[0].findDetail[1].address}
+        </Text>
+        <HStack>
+          <Starbar star={foodData.findList[0].findDetail[1].star} />
+          <Text>
+            {foodData.findList[0].findDetail[1].star != null ? (
+              <Text>
+                {foodData.findList[0].findDetail[1].star}.0
+                <Text color={"#808080"}>/ 5.0</Text>
+              </Text>
+            ) : null}
+          </Text>
+        </HStack>
+      </VStack>
     </Box>
   );
   // } else if ({ label } == "prandial") {

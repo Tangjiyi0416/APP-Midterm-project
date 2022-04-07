@@ -87,7 +87,7 @@
       "comment": "留言評論區"
     },
     {
-      "name": "JOY.S LOVE",
+      "name": "JOY.S LOVE就是愛",
       "address": "台北市大安區和平東路二段118巷4號",
       "phone": "0987-020-554",
       "time": "11:30 ~ 19:30",
@@ -112,7 +112,7 @@
     {
       "title": "search",
       "label": "brunch",
-      "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/早午餐.jpg?raw=true",
+      "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/早午餐.png?raw=true",
       "findDetail": [
         {
           "name": "JOY.S LOVE",
@@ -121,13 +121,22 @@
           "time": "11:30 ~ 19:30",
           "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/就是愛煎餅果子.jpeg?raw=true",
           "star": 4
+        },
+        {
+          "name": "Mama’s 鐵鍋早午餐",
+          "address": "台北市和平東路二段331巷43弄42號",
+          "phone": "0987-020-554",
+          "time": "11:30 ~ 19:30",
+          "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/Mama’s%20鐵鍋早午餐.jpg?raw=true",
+          "star": 4
         }
+        
       ]
     },
     {
       "title": "search",
       "label": "prandial",
-      "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/午晚餐.jpg?raw=true",
+      "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/午晚餐.png?raw=true",
       "findDetail": [
         {
           "name": "JOY.S LOVE",
@@ -166,7 +175,7 @@
     {
       "title": "search",
       "label": "dessert",
-      "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/甜點類.jpg?raw=true",
+      "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/甜點類.png?raw=true",
       "findDetail": [
         {
           "name": "雪人兄弟",
@@ -181,7 +190,7 @@
     {
       "title": "search",
       "label": "drink",
-      "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/飲料類.jpg?raw=true"
+      "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/飲料類.png?raw=true"
     }
   ]
 }

@@ -171,15 +171,15 @@ const DetailScreen = ({ route }) => {
               maxW="300"
               mb={10}
               borderColor={"gray.400"}
+              borderRadius={10}
             />
           </Box>
           <Button
             onPress={() => Toast.show({ description: "已送出" })}
-            mt="2"
             colorScheme="violet"
-            width="60%"
+            width="30%"
             alignSelf="center"
-            mb={20}
+            mb={10}
           >
             <Text color={"white"} fontSize="14" fontWeight="600">
               確認送出

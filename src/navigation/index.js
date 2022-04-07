@@ -172,7 +172,7 @@ const SettingsStack = () => {
   );
 };
 
-const HomeStack = () => {
+const HomeStack = ({ navigation: { goBack } }) => {
   const { colorMode } = useColorMode();
   const [Like, setLike] = useState(false);
   return (
@@ -206,6 +206,7 @@ const HomeStack = () => {
           headerTitleStyle: {
             fontWeight: "400",
             fontSize: 20,
+            color:"white",
           },
           headerRight: () => (
             <TouchableOpacity onPress={() => setLike(!Like)}>
@@ -213,15 +214,25 @@ const HomeStack = () => {
                 <MaterialCommunityIcons
                   name="cards-heart"
                   color={"red"}
-                  size={30}
+                  size={25}
                 />
               ) : (
                 <MaterialCommunityIcons
                   name="heart-outline"
                   color={"gray"}
-                  size={30}
+                  size={25}
                 />
               )}
+            </TouchableOpacity>
+          ),
+          headerLeft: () => (
+            <TouchableOpacity>
+              <MaterialCommunityIcons
+                name="chevron-left"
+                color={"black"}
+                size={30}
+                onPress={() => goBack()}
+              />
             </TouchableOpacity>
           ),
         })}

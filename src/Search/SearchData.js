@@ -15,14 +15,16 @@ import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityI
 import Starbar from "../star/starabr";
 const SearchData = ({ Search, navigation }) => {
   return (
-    <Box  mb={5}>
-      <VStack alignSelf="center">
+    <Box mt={5}  >
+      <VStack ml={50} >
         <Pressable onPress={() => navigation.navigate("SectionScreen", Search)}>
-          <AspectRatio mt={3} w="320" h="180">
+          <AspectRatio  w="300" h="150" >
             <Image
               source={{ uri: Search.photo }}
               alt="store"
               borderRadius={10}
+              w="300" h="150"
+              
             />
           </AspectRatio>
         </Pressable>

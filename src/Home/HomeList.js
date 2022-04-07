@@ -45,7 +45,7 @@ const HomeList = ({ list, navigation }) => {
                   mt={10}
                   mb={5}
                   alt="Home-icon"
-                  borderColor={"black"}
+                  borderColor={"#C4C4C4"}
                   borderWidth={0.5}
                 />
               </TouchableOpacity>
@@ -59,7 +59,7 @@ const HomeList = ({ list, navigation }) => {
                   mt={10}
                   borderRadius={20}
                   alt="Home-icon"
-                  borderColor={"black"}
+                  borderColor={"#C4C4C4"}
                   borderWidth={0.5}
                 />
               </TouchableOpacity>

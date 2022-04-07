@@ -70,7 +70,7 @@ const LoginScreen = ({ navigation }) => {
               忘記密碼
             </Link>
           </FormControl>
-          <Button mt="2" colorScheme='violet'>
+          <Button mt="2" colorScheme='violet' width="40%" alignSelf="center">
             <Text color={"white"} fontSize="14" fontWeight="600">登入</Text>
           </Button>
           <HStack mt="6" justifyContent="center">
