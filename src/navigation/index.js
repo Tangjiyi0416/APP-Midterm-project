@@ -238,7 +238,7 @@ const HomeStack = ({ navigation: { goBack } }) => {
             <TouchableOpacity>
               <MaterialCommunityIcons
                 name="chevron-left"
-                color={"black"}
+                color={colorMode == "light" ? "black" : "gray"}
                 size={30}
                 onPress={() => goBack()}
               />
@@ -271,14 +271,14 @@ const SearchStack = () => {
         name="SectionScreen"
         component={SectionScreen}
         options={({ route }) => ({
-          title: route.params.name,
+          title: "收尋",
           // headerShown: false,
           headerShadowVisible: false,
           headerTintColor: colorMode == "light" ? "black" : "white",
           headerTitleStyle: {
             fontWeight: "400",
             fontSize: 20,
-            color: "white",
+            color: colorMode == "light" ? "white" : "black",
           },
         })}
       />
@@ -295,6 +295,7 @@ const SearchStack = () => {
             fontSize: 20,
             color: "white",
           },
+          // backgroundColor: colorMode == "light" ? "black" : "white",
         })}
       />
       <Stack.Screen
