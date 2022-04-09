@@ -15,7 +15,7 @@ const Starbar = (props) => {
   if (props.star == 1) {
     return (
       <View style={styles.starFlex}>
-        <MaterialCommunityIcons name="star" color={"gray"} size={18} />
+        <MaterialCommunityIcons name="star" color={"#FCAA87"} size={18} />
         <MaterialCommunityIcons name="star" color={"gray"} size={18} />
         <MaterialCommunityIcons name="star" color={"gray"} size={18} />
         <MaterialCommunityIcons name="star" color={"gray"} size={18} />
@@ -25,8 +25,8 @@ const Starbar = (props) => {
   } else if (props.star == 2) {
     return (
       <View style={styles.starFlex}>
-        <MaterialCommunityIcons name="star" color={"#FFC41F"} size={18} />
-        <MaterialCommunityIcons name="star" color={"#FFC41F"} size={18} />
+        <MaterialCommunityIcons name="star" color={"#FCAA87"} size={18} />
+        <MaterialCommunityIcons name="star" color={"#FCAA87"} size={18} />
         <MaterialCommunityIcons name="star" color={"gray"} size={18} />
         <MaterialCommunityIcons name="star" color={"gray"} size={18} />
         <MaterialCommunityIcons name="star" color={"gray"} size={18} />
@@ -35,9 +35,9 @@ const Starbar = (props) => {
   } else if (props.star == 3) {
     return (
       <View style={styles.starFlex}>
-        <MaterialCommunityIcons name="star" color={"#FFC41F"} size={18} />
-        <MaterialCommunityIcons name="star" color={"#FFC41F"} size={18} />
-        <MaterialCommunityIcons name="star" color={"#FFC41F"} size={18} />
+        <MaterialCommunityIcons name="star" color={"#FCAA87"} size={18} />
+        <MaterialCommunityIcons name="star" color={"#FCAA87"} size={18} />
+        <MaterialCommunityIcons name="star" color={"#FCAA87"} size={18} />
         <MaterialCommunityIcons name="star" color={"gray"} size={18} />
         <MaterialCommunityIcons name="star" color={"gray"} size={18} />
       </View>
@@ -45,21 +45,21 @@ const Starbar = (props) => {
   } else if (props.star == 4) {
     return (
       <View style={styles.starFlex}>
-        <MaterialCommunityIcons name="star" color={"#FFC41F"} size={18} />
-        <MaterialCommunityIcons name="star" color={"#FFC41F"} size={18} />
-        <MaterialCommunityIcons name="star" color={"#FFC41F"} size={18} />
-        <MaterialCommunityIcons name="star" color={"#FFC41F"} size={18} />
+        <MaterialCommunityIcons name="star" color={"#FCAA87"} size={18} />
+        <MaterialCommunityIcons name="star" color={"#FCAA87"} size={18} />
+        <MaterialCommunityIcons name="star" color={"#FCAA87"} size={18} />
+        <MaterialCommunityIcons name="star" color={"#FCAA87"} size={18} />
         <MaterialCommunityIcons name="star" color={"gray"} size={18} />
       </View>
     );
   } else if (props.star == 5) {
     return (
       <View style={styles.starFlex}>
-        <MaterialCommunityIcons name="star" color={"#FFC41F"} size={18} />
-        <MaterialCommunityIcons name="star" color={"#FFC41F"} size={18} />
-        <MaterialCommunityIcons name="star" color={"#FFC41F"} size={18} />
-        <MaterialCommunityIcons name="star" color={"#FFC41F"} size={18} />
-        <MaterialCommunityIcons name="star" color={"#FFC41F"} size={18} />
+        <MaterialCommunityIcons name="star" color={"#FCAA87"} size={18} />
+        <MaterialCommunityIcons name="star" color={"#FCAA87"} size={18} />
+        <MaterialCommunityIcons name="star" color={"#FCAA87"} size={18} />
+        <MaterialCommunityIcons name="star" color={"#FCAA87"} size={18} />
+        <MaterialCommunityIcons name="star" color={"#FCAA87"} size={18} />
       </View>
     );
   } else {

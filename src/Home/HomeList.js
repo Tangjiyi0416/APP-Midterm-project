@@ -21,12 +21,15 @@ const HomeList = ({ list, navigation }) => {
   );
   return (
     <Box
-      _dark={{ borderColor: "black", borderWidth: 0.6 }}
-      _light={{ bg: "#FFFAE1", borderRadius: 6 }}
+    // _dark={{ borderColor: "#51483C", borderWidth: 0.6 }}
+    // _light={{ bg: "#FFFAE1", borderRadius: 6 }}
     >
       <FlatList
         ListHeaderComponent={
           <>
+            <Box alignSelf="center" mt={5}>
+              <Text>國北人今天想來點什麼？</Text>
+            </Box>
             <HStack alignSelf="center">
               {/* <Button onPress={() => Toast.show({description: "已送出"})} mt="2"  width={150} h={100} mt={5} mr={5} mb={10}>
           <Image source={}></Image>
@@ -55,7 +58,7 @@ const HomeList = ({ list, navigation }) => {
               <TouchableOpacity w={150} h={100}>
                 <Image
                   source={{
-                    uri: "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/Group%2078.png?raw=true",
+                    uri: "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/%E5%9C%8B%E5%8C%97%E7%94%9F%E6%B4%BB.png?raw=true",
                   }}
                   w={150}
                   h={100}

@@ -14,7 +14,7 @@ const HomeData = ({ Home, navigation }) => {
     <Box
       mx="auto"
       mb="8"
-      _dark={{ borderColor: "blueGray.900", borderWidth: 0.6 }}
+      // _dark={{ borderColor: "#51483C", borderWidth: 0.6 }}
     >
       {/* <HStack>
         <Image />
@@ -22,7 +22,7 @@ const HomeData = ({ Home, navigation }) => {
       </HStack> */}
 
       <VStack
-        _dark={{ bg: "blueGray.900", borderRadius: 6 }}
+        _dark={{ bg: "#3F382E", borderRadius: 6 }}
         _light={{ bg: "#FFFAE1", borderRadius: 6 }}
       >
         <Pressable onPress={() => navigation.navigate("DetailScreen", Home)}>

@@ -60,8 +60,17 @@ const MyTabs = () => {
     <Tab.Navigator
       initialRouteName="HomeStack"
       screenOptions={{
-        tabBarInactiveTintColor: colors.light400,
-        tabBarActiveTintColor: "#9a53ff",
+        tabBarInactiveTintColor: "gray",
+        tabBarActiveTintColor: colorMode == "light" ? "#69563B" : "#FFE7A4",
+        tabBarStyle: {
+          backgroundColor: colorMode == "light" ? "#A1917A" : "black",
+          // fontWeight: "bold",
+        },
+        tabBarLabelStyle: {
+          fontWeight: "bold",
+          fontSize: 12,
+          bottom: 4,
+        },
       }}
     >
       <Tab.Screen
@@ -71,6 +80,7 @@ const MyTabs = () => {
           headerShown: false,
           title: "首頁",
 
+          fontWeight: "bold",
           tabBarIcon: ({ color, focused, size }) => (
             <MaterialCommunityIcons name="home" color={color} size={26} />
           ),
@@ -215,7 +225,7 @@ const HomeStack = ({ navigation: { goBack } }) => {
           headerTitleStyle: {
             fontWeight: "400",
             fontSize: 20,
-            color:"white",
+            color: "white",
           },
           headerRight: () => (
             <TouchableOpacity onPress={() => setLike(!Like)}>

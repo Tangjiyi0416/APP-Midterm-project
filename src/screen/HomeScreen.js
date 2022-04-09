@@ -14,7 +14,7 @@ import HomeList from "../Home/HomeList";
 
 const HomeScreen = ({ navigation }) => {
   return (
-    <Box _dark={{ bg: "blueGray.900" }}>
+    <Box _dark={{ bg: "#3F382E" }} _light={{ bg: "#FFFAE1" }}>
       <HomeList list={foodData.restaurantList} navigation={navigation} />
     </Box>
   );
