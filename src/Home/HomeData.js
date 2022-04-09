@@ -11,13 +11,17 @@ import {
 import Starbar from "../star/starabr";
 const HomeData = ({ Home, navigation }) => {
   return (
-    <Box mx="auto" mb="8" _dark={{ borderColor: "black", borderWidth: 0.6 }}>
+    <Box
+      mx="auto"
+      mb="8"
+      _dark={{ borderColor: "blueGray.900", borderWidth: 0.6 }}
+    >
       {/* <HStack>
         <Image />
         <Image />
       </HStack> */}
 
-      <VStack _dark={{ bg: "black" }}>
+      <VStack _dark={{ bg: "blueGray.900", borderRadius: 6 }}>
         <Pressable onPress={() => navigation.navigate("DetailScreen", Home)}>
           <AspectRatio w="350" h="250">
             <Image source={{ uri: Home.photo }} alt="store" borderRadius={10} />
