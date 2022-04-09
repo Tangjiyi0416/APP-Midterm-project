@@ -23,7 +23,7 @@ const HomeList = ({ list, navigation }) => {
     <Box>
       <FlatList bg={"#FFFAE1"}
         ListHeaderComponent={
-          <><Box alignSelf="center" mt={5}><Text>國北人今天想來點什麼？</Text></Box>
+          <><Box alignSelf="center" mt={5}><Text>國北人今天想來點什麼？!</Text></Box>
             <HStack alignSelf="center">
               {/* <Button onPress={() => Toast.show({description: "已送出"})} mt="2"  width={150} h={100} mt={5} mr={5} mb={10}>
           <Image source={}></Image>
