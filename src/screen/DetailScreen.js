@@ -18,6 +18,7 @@ import {
   TextArea,
   Toast,
 } from "native-base";
+import { opacity } from "react-native-reanimated/src/reanimated2/Colors";
 const DetailScreen = ({ route }) => {
   const {
     star,
@@ -43,7 +44,7 @@ const DetailScreen = ({ route }) => {
 
   return (
     <ScrollView>
-      <Box>
+      <Box _dark={{ bg: "#3F382E" }} _light={{ bg: "#FFFAE1" }}>
         <AspectRatio w="100%" ratio={16 / 9}>
           <Image
             source={{ uri: photo }}
@@ -55,23 +56,23 @@ const DetailScreen = ({ route }) => {
         </AspectRatio>
 
         <Box>
-          <HStack mt={30} ml={10} >
+          <HStack mt={30} ml={10}>
             <Box justifyContent="flex-end">
               <Text fontSize={28}>{name}</Text>
             </Box>
           </HStack>
-          <Box  pb={1}>
-                <HStack ml={10} mb={5}>
-                  <Starbar star={star} />
+          <Box pb={1}>
+            <HStack ml={10} mb={5}>
+              <Starbar star={star} />
+              <Text>
+                {star != null ? (
                   <Text>
-                    {star != null ? (
-                      <Text>
-                        {star}.0 <Text color={"#808080"}>/ 5.0</Text>
-                      </Text>
-                    ) : null}
+                    {star}.0 <Text color={"white"}>/ 5.0</Text>
                   </Text>
-                </HStack>
-              </Box>
+                ) : null}
+              </Text>
+            </HStack>
+          </Box>
           <HStack ml={10} mb={2}>
             <MaterialCommunityIcons name="map-marker" color={"red"} size={25} />
             <Text ml={3} fontSize={18}>
@@ -107,7 +108,7 @@ const DetailScreen = ({ route }) => {
         <Box mt={50}>
           <HStack ml={10} mb={2}>
             <Box justifyContent="flex-end" pb={1.5}>
-              <MaterialCommunityIcons name="star" color={"#FDAD35"} size={28} />
+              <MaterialCommunityIcons name="star" color={"#FCAA87"} size={28} />
             </Box>
 
             <Text ml={3} fontSize={26}>
@@ -115,7 +116,7 @@ const DetailScreen = ({ route }) => {
             </Text>
           </HStack>
           <Box ml={10} mb={5}>
-            <Text ml={3} fontSize={20} fontWeight={"bold"} color={"black"}>
+            <Text ml={3} fontSize={20} fontWeight={"bold"}>
               {food1}
             </Text>
             <HStack mr={130}>
@@ -153,7 +154,7 @@ const DetailScreen = ({ route }) => {
             <Box justifyContent="flex-end" pb={1.5}>
               <MaterialCommunityIcons
                 name="comment-text"
-                color={"#6200EE"}
+                color={"#FCAA87"}
                 size={25}
               />
             </Box>
@@ -168,23 +169,28 @@ const DetailScreen = ({ route }) => {
               h={200}
               placeholder="想要說些什麼？"
               w="75%"
-              maxW="300"
+              maxW="400"
               mb={10}
-              borderColor={"gray.400"}
+              borderColor={"#949494"}
               borderRadius={10}
+              bg="white"
             />
           </Box>
-          <Button
+          <Pressable
             onPress={() => Toast.show({ description: "已送出" })}
-            colorScheme="violet"
             width="30%"
+            height={30}
             alignSelf="center"
             mb={10}
+            bg="#A1917A"
+            borderRadius={10}
           >
-            <Text color={"white"} fontSize="14" fontWeight="600">
-              確認送出
-            </Text>
-          </Button>
+            <Center>
+              <Text color={"white"} fontSize="14" fontWeight="600" pt={1}>
+                確認送出
+              </Text>
+            </Center>
+          </Pressable>
         </Box>
       </Box>
     </ScrollView>

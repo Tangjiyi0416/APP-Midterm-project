@@ -8,6 +8,8 @@ const SearchList = ({ list, navigation }) => {
   );
   return (
     <FlatList
+      _dark={{ bg: "#3F382E" }}
+      _light={{ bg: "#FFFAE1" }}
       ListHeaderComponent={
         <>
           <HStack mt={10} justifyContent="center">

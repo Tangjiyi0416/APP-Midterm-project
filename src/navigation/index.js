@@ -10,7 +10,7 @@ import {
   Image,
   AspectRatio,
 } from "native-base";
-import { TouchableOpacity } from "react-native";
+import { TouchableOpacity, activeOpacity } from "react-native";
 import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
 
 // import {
@@ -60,7 +60,7 @@ const MyTabs = () => {
     <Tab.Navigator
       initialRouteName="HomeStack"
       screenOptions={{
-        tabBarInactiveTintColor: "gray",
+        tabBarInactiveTintColor: colorMode == "light" ? "white" : "gray",
         tabBarActiveTintColor: colorMode == "light" ? "#69563B" : "#FFE7A4",
         tabBarStyle: {
           backgroundColor: colorMode == "light" ? "#A1917A" : "black",
@@ -221,11 +221,14 @@ const HomeStack = ({ navigation: { goBack } }) => {
         options={({ route }) => ({
           title: route.params.name,
           // headerShown: false,
-          headerTintColor: colorMode == "light" ? "black" : "white",
+          // sheaderTintColor: colorMode == "light" ? "black" : "white",
+          headerStyle: {
+            backgroundColor: colorMode == "light" ? "#A1917A" : "black",
+          },
           headerTitleStyle: {
             fontWeight: "400",
             fontSize: 20,
-            color: "white",
+            color: colorMode == "light" ? "#A1917A" : "black",
           },
           headerRight: () => (
             <TouchableOpacity onPress={() => setLike(!Like)}>
@@ -238,7 +241,7 @@ const HomeStack = ({ navigation: { goBack } }) => {
               ) : (
                 <MaterialCommunityIcons
                   name="heart-outline"
-                  color={"gray"}
+                  color={"white"}
                   size={25}
                 />
               )}
@@ -248,8 +251,9 @@ const HomeStack = ({ navigation: { goBack } }) => {
             <TouchableOpacity>
               <MaterialCommunityIcons
                 name="chevron-left"
-                color={colorMode == "light" ? "black" : "gray"}
+                color={colorMode == "light" ? "white" : "white"}
                 size={30}
+                activeOpacity={0.6}
                 onPress={() => goBack()}
               />
             </TouchableOpacity>
