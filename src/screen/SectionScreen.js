@@ -1,6 +1,8 @@
 import React from "react";
 import foodData from "../json/food.json";
 import Starbar from "../star/starabr";
+import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import {
   Box,
   VStack,
@@ -21,10 +23,15 @@ const SectionScreen = ({
 
   // if ({ label } == "brunch") {
   return (
-<<<<<<< HEAD
   <ScrollView>
-    <Box mx="auto" mb="8" >
-      <VStack mt={10}>
+    <Box mx="auto"  >
+      <HStack mt={5} >
+          <Box justifyContent="flex-end" pb={1.5}>
+              <MaterialIcons name="restaurant-menu" color={"gray"} size={28} />
+            </Box>
+            <Text  fontSize={26}>早午餐</Text>
+        </HStack>
+      <VStack mt={5}>
         <Pressable onPress={() => navigation.navigate("DetailScreen", section)}>
           <AspectRatio w="350" h="250">
             <Image
@@ -34,22 +41,6 @@ const SectionScreen = ({
             />
           </AspectRatio>
         </Pressable>
-=======
-    <ScrollView>
-      <Box mx="auto" mb="8">
-        <VStack mt={10}>
-          <Pressable
-            onPress={() => navigation.navigate("DetailScreen", section)}
-          >
-            <AspectRatio w="350" h="250">
-              <Image
-                source={{ uri: foodData.findList[0].findDetail[0].photo }}
-                alt="store"
-                borderRadius={10}
-              />
-            </AspectRatio>
-          </Pressable>
->>>>>>> eb94635181419e482ab2b96ea77196ac8f95c704
 
           <Text fontWeight="bold" fontSize="18">
             {foodData.findList[0].findDetail[0].name}
@@ -69,10 +60,10 @@ const SectionScreen = ({
             </Text>
           </HStack>
         </VStack>
+        
+
         <VStack mt={10}>
-          <Pressable
-            onPress={() => navigation.navigate("DetailScreen", section)}
-          >
+          <Pressable onPress={() => navigation.navigate("DetailScreen", section)}>
             <AspectRatio w="350" h="250">
               <Image
                 source={{ uri: foodData.findList[0].findDetail[1].photo }}
@@ -88,13 +79,6 @@ const SectionScreen = ({
           <Text color={"#808080"}>
             {foodData.findList[0].findDetail[1].address}
           </Text>
-<<<<<<< HEAD
-        </HStack>
-      </VStack>
-    </Box>
-    </ScrollView>
-    
-=======
           <HStack>
             <Starbar star={foodData.findList[0].findDetail[1].star} />
             <Text>
@@ -107,9 +91,246 @@ const SectionScreen = ({
             </Text>
           </HStack>
         </VStack>
-      </Box>
+
+        <VStack mt={10}>
+        <Pressable onPress={() => navigation.navigate("DetailScreen", section)}>
+          <AspectRatio w="350" h="250">
+            <Image
+              source={{ uri: foodData.findList[0].findDetail[2].photo }}
+              alt="store"
+              borderRadius={10}
+            />
+          </AspectRatio>
+        </Pressable>
+
+          <Text fontWeight="bold" fontSize="18">
+            {foodData.findList[0].findDetail[2].name}
+          </Text>
+          <Text color={"#808080"}>
+            {foodData.findList[0].findDetail[2].address}
+          </Text>
+          <HStack>
+            <Starbar star={foodData.findList[0].findDetail[2].star} />
+            <Text>
+              {foodData.findList[0].findDetail[2].star != null ? (
+                <Text>
+                  {foodData.findList[0].findDetail[2].star}.0
+                  <Text color={"#808080"}>/ 5.0</Text>
+                </Text>
+              ) : null}
+            </Text>
+          </HStack>
+        </VStack>
+
+        <VStack mt={10}>
+        <Pressable onPress={() => navigation.navigate("DetailScreen", section)}>
+          <AspectRatio w="350" h="250">
+            <Image
+              source={{ uri: foodData.findList[0].findDetail[3].photo }}
+              alt="store"
+              borderRadius={10}
+            />
+          </AspectRatio>
+        </Pressable>
+
+          <Text fontWeight="bold" fontSize="18">
+            {foodData.findList[0].findDetail[3].name}
+          </Text>
+          <Text color={"#808080"}>
+            {foodData.findList[0].findDetail[3].address}
+          </Text>
+          <HStack>
+            <Starbar star={foodData.findList[0].findDetail[3].star} />
+            <Text>
+              {foodData.findList[0].findDetail[3].star != null ? (
+                <Text>
+                  {foodData.findList[0].findDetail[0].star}.0
+                  <Text color={"#808080"}>/ 5.0</Text>
+                </Text>
+              ) : null}
+            </Text>
+          </HStack>
+        </VStack>
+        
+        <VStack mt={10}>
+        <Pressable onPress={() => navigation.navigate("DetailScreen", section)}>
+          <AspectRatio w="350" h="250">
+            <Image
+              source={{ uri: foodData.findList[0].findDetail[4].photo }}
+              alt="store"
+              borderRadius={10}
+            />
+          </AspectRatio>
+        </Pressable>
+
+          <Text fontWeight="bold" fontSize="18">
+            {foodData.findList[0].findDetail[4].name}
+          </Text>
+          <Text color={"#808080"}>
+            {foodData.findList[0].findDetail[4].address}
+          </Text>
+          <HStack>
+            <Starbar star={foodData.findList[0].findDetail[4].star} />
+            <Text>
+              {foodData.findList[0].findDetail[4].star != null ? (
+                <Text>
+                  {foodData.findList[0].findDetail[4].star}.0
+                  <Text color={"#808080"}>/ 5.0</Text>
+                </Text>
+              ) : null}
+            </Text>
+          </HStack>
+        </VStack>
+
+        <VStack mt={10}>
+        <Pressable onPress={() => navigation.navigate("DetailScreen", section)}>
+          <AspectRatio w="350" h="250">
+            <Image
+              source={{ uri: foodData.findList[0].findDetail[5].photo }}
+              alt="store"
+              borderRadius={10}
+            />
+          </AspectRatio>
+        </Pressable>
+          <Text fontWeight="bold" fontSize="18">
+            {foodData.findList[0].findDetail[5].name}
+          </Text>
+          <Text color={"#808080"}>
+            {foodData.findList[0].findDetail[5].address}
+          </Text>
+          <HStack>
+            <Starbar star={foodData.findList[0].findDetail[5].star} />
+            <Text>
+              {foodData.findList[0].findDetail[5].star != null ? (
+                <Text>
+                  {foodData.findList[0].findDetail[5].star}.0
+                  <Text color={"#808080"}>/ 5.0</Text>
+                </Text>
+              ) : null}
+            </Text>
+          </HStack>
+        </VStack>
+
+        <VStack mt={10}>
+        <Pressable onPress={() => navigation.navigate("DetailScreen", section)}>
+          <AspectRatio w="350" h="250">
+            <Image
+              source={{ uri: foodData.findList[0].findDetail[6].photo }}
+              alt="store"
+              borderRadius={10}
+            />
+          </AspectRatio>
+        </Pressable>
+          <Text fontWeight="bold" fontSize="18">
+            {foodData.findList[0].findDetail[6].name}
+          </Text>
+          <Text color={"#808080"}>
+            {foodData.findList[0].findDetail[6].address}
+          </Text>
+          <HStack>
+            <Starbar star={foodData.findList[0].findDetail[6].star} />
+            <Text>
+              {foodData.findList[0].findDetail[6].star != null ? (
+                <Text>
+                  {foodData.findList[0].findDetail[6].star}.0
+                  <Text color={"#808080"}>/ 5.0</Text>
+                </Text>
+              ) : null}
+            </Text>
+          </HStack>
+        </VStack>
+
+        <VStack mt={10}>
+        <Pressable onPress={() => navigation.navigate("DetailScreen", section)}>
+          <AspectRatio w="350" h="250">
+            <Image
+              source={{ uri: foodData.findList[0].findDetail[7].photo }}
+              alt="store"
+              borderRadius={10}
+            />
+          </AspectRatio>
+        </Pressable>
+          <Text fontWeight="bold" fontSize="18">
+            {foodData.findList[0].findDetail[7].name}
+          </Text>
+          <Text color={"#808080"}>
+            {foodData.findList[0].findDetail[7].address}
+          </Text>
+          <HStack>
+            <Starbar star={foodData.findList[0].findDetail[7].star} />
+            <Text>
+              {foodData.findList[0].findDetail[7].star != null ? (
+                <Text>
+                  {foodData.findList[0].findDetail[7].star}.0
+                  <Text color={"#808080"}>/ 5.0</Text>
+                </Text>
+              ) : null}
+            </Text>
+          </HStack>
+        </VStack>
+
+        <VStack mt={10}>
+        <Pressable onPress={() => navigation.navigate("DetailScreen", section)}>
+          <AspectRatio w="350" h="250">
+            <Image
+              source={{ uri: foodData.findList[0].findDetail[8].photo }}
+              alt="store"
+              borderRadius={10}
+            />
+          </AspectRatio>
+        </Pressable>
+          <Text fontWeight="bold" fontSize="18">
+            {foodData.findList[0].findDetail[8].name}
+          </Text>
+          <Text color={"#808080"}>
+            {foodData.findList[0].findDetail[8].address}
+          </Text>
+          <HStack>
+            <Starbar star={foodData.findList[0].findDetail[8].star} />
+            <Text>
+              {foodData.findList[0].findDetail[8].star != null ? (
+                <Text>
+                  {foodData.findList[0].findDetail[8].star}.0
+                  <Text color={"#808080"}>/ 5.0</Text>
+                </Text>
+              ) : null}
+            </Text>
+          </HStack>
+        </VStack>
+
+        <VStack mt={10}>
+        <Pressable onPress={() => navigation.navigate("DetailScreen", section)}>
+          <AspectRatio w="350" h="250">
+            <Image
+              source={{ uri: foodData.findList[0].findDetail[9].photo }}
+              alt="store"
+              borderRadius={10}
+            />
+          </AspectRatio>
+        </Pressable>
+          <Text fontWeight="bold" fontSize="18">
+            {foodData.findList[0].findDetail[9].name}
+          </Text>
+          <Text color={"#808080"}>
+            {foodData.findList[0].findDetail[9].address}
+          </Text>
+          <HStack>
+            <Starbar star={foodData.findList[0].findDetail[9].star} />
+            <Text>
+              {foodData.findList[0].findDetail[9].star != null ? (
+                <Text>
+                  {foodData.findList[0].findDetail[9].star}.0
+                  <Text color={"#808080"}>/ 5.0</Text>
+                </Text>
+              ) : null}
+            </Text>
+          </HStack>
+        </VStack>
+    </Box>
+    
     </ScrollView>
->>>>>>> eb94635181419e482ab2b96ea77196ac8f95c704
+ 
+    
   );
   // } else if ({ label } == "prandial") {
   //   return (

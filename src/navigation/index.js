@@ -196,8 +196,8 @@ const HomeStack = ({ navigation: { goBack } }) => {
         options={{
           headerShadowVisible: false,
 
-          // headerShown: false,
-          title: "國北人今天想來點什麼？",
+          headerShown: false,
+          // title: "國北人今天想來點什麼？",
 
           headerTitleStyle: {
             fontWeight: "400",
