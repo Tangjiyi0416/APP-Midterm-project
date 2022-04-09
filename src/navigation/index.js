@@ -10,6 +10,7 @@ import {
   useColorMode,
   Image,
   AspectRatio,
+  KeyboardAvoidingView,
 } from "native-base";
 import { TouchableOpacity, activeOpacity } from "react-native";
 import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
@@ -43,13 +44,19 @@ const Navigation = () => {
   const { colorMode } = useColorMode();
   const MyTheme = colorMode == "light" ? lightTheme : darkTheme;
   return (
-    <NavigationContainer theme={MyTheme}>
-      <StatusBar
-        barStyle={colorMode == "light" ? "dark-content" : "light-content"}
-        backgroundColor={colorMode == "light" ? "white" : "black"}
-      />
-      <MyTabs />
-    </NavigationContainer>
+    <KeyboardAvoidingView
+      keyboardVerticalOffset={Platform.select({ ios: 0, android: -500 })}
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
+      flex={1}
+    >
+      <NavigationContainer theme={MyTheme}>
+        <StatusBar
+          barStyle={colorMode == "light" ? "dark-content" : "light-content"}
+          backgroundColor={colorMode == "light" ? "white" : "black"}
+        />
+        <MyTabs />
+      </NavigationContainer>
+    </KeyboardAvoidingView>
   );
 };
 
@@ -132,7 +139,7 @@ const MyTabs = () => {
   );
 };
 
-const SettingsStack = () => {
+const SettingsStack = ({ navigation: { goBack } }) => {
   const { colorMode } = useColorMode();
 
   return (
@@ -177,17 +184,17 @@ const SettingsStack = () => {
             fontWeight: "400",
             fontSize: 20,
           },
-          headerLeft: () => (
-            <TouchableOpacity>
-              <AntDesign
-                name="back"
-                color={colorMode == "light" ? "white" : "white"}
-                size={30}
-                activeOpacity={0.6}
-                onPress={() => goBack()}
-              />
-            </TouchableOpacity>
-          ),
+          // headerLeft: () => (
+          //   <TouchableOpacity>
+          //     <AntDesign
+          //       name="back"
+          //       color={colorMode == "light" ? "white" : "white"}
+          //       size={30}
+          //       activeOpacity={0.6}
+          //       onPress={() =>}
+          //     />
+          //   </TouchableOpacity>
+          // ),
         }}
       />
       <Stack.Screen
@@ -326,7 +333,7 @@ const SearchStack = ({ navigation: { goBack } }) => {
             fontSize: 20,
             color: colorMode == "light" ? "#A1917A" : "black",
           },
-          
+
           headerLeft: () => (
             <TouchableOpacity>
               <AntDesign

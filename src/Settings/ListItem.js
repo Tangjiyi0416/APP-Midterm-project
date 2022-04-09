@@ -86,18 +86,18 @@ const ListItem = ({ title, navigation, destination, icon }) => {
       //     destination ? navigation.navigate(destination) : null;
       //   }}
       // >
-      <HStack _dark={{}} _light={{}} py="5" >
-        <Box ml={5} mr={15} >
+      <HStack _dark={{}} _light={{}} py="5">
+        <Box ml={5} mr={15} pt={2}>
           <MaterialCommunityIcons
             name="alarm-light"
             color="#FCAA87"
             size={30}
           />
         </Box>
-        
+
         <Box>
           <Center
-            shadow={2}
+            // shadow={2}
             borderRadius="50"
             alignSelf="center"
             // px="18"
