@@ -86,38 +86,33 @@ const ListItem = ({ title, navigation, destination, icon }) => {
       //     destination ? navigation.navigate(destination) : null;
       //   }}
       // >
-      <HStack _dark={{}} _light={{}}>
-        <Box ml={5} mr={15}>
+      <HStack _dark={{}} _light={{}} py="5" >
+        <Box ml={5} mr={15} >
           <MaterialCommunityIcons
             name="alarm-light"
             color="#FCAA87"
             size={30}
           />
         </Box>
-        <Text fontSize={20}>{title}</Text>
-        <Box
-          flex={1}
-          // _dark={{ bg: "blueGray.900" }}
-          // _light={{ bg: "blueGray.50" }}
-        >
+        
+        <Box>
           <Center
             shadow={2}
-            // width="80%"
-            // height="20%"
-            // mt="10"
-            px="2"
-            py="4"
+            borderRadius="50"
+            alignSelf="center"
+            // px="18"
+            // py="3"
             // _dark={{
-            //   bg: "blueGray.800",
+            //   bg: "black",
             //   borderColor: "blueGray.500",
             //   borderWidth: 0.6,
             // }}
             // _light={{ bg: "white" }}
-            borderRadius="md"
-            alignSelf="center"
+            // borderRadius="md"
+            // alignSelf="center"
           >
             <HStack space={8} alignItems="center">
-              <Text fontSize="lg">
+              <Text fontSize="20">
                 {colorMode == "light" ? "淺色模式" : "深色模式"}
               </Text>
               <Switch
@@ -126,9 +121,9 @@ const ListItem = ({ title, navigation, destination, icon }) => {
                 onToggle={toggleColorMode}
                 accessibilityLabel="display-mode"
                 accessibilityHint="light or dark mode"
-                offTrackColor="indigo.300"
-                onTrackColor="indigo.200"
-                onThumbColor="indigo.500"
+                offTrackColor="warning.400"
+                onTrackColor="warning.200"
+                onThumbColor="warning.400"
                 offThumbColor="indigo.50"
               />
             </HStack>

@@ -27,18 +27,9 @@ const LoginScreen = ({ navigation }) => {
       _dark={{ bg: "#3F382E" }}
       _light={{ bg: "#FFFAE1" }}
       h="100%"
-    >
-      <Box safeArea p="2" py="8" w="90%" maxW="290">
-        <Heading
-          size="lg"
-          fontWeight="600"
-          color="coolGray.800"
-          _dark={{
-            color: "warmGray.50",
-          }}
-        >
-          登入您的帳號
-        </Heading>
+      >
+      <Box  w="80%" justifyContent={"center"} >
+        <Text fontSize={24} fontWeight="bold" >登入您的帳號</Text>
         <Heading
           mt="1"
           _dark={{
@@ -55,7 +46,7 @@ const LoginScreen = ({ navigation }) => {
               電子郵件
             </Text>
           </FormControl.Label>
-          <FormControl bg={"#EDEDEF"} borderColor={"#C4C4C4"}>
+          <FormControl bg={"#EDEDEF"} >
             <Input />
           </FormControl>
           <FormControl.Label>
@@ -63,7 +54,7 @@ const LoginScreen = ({ navigation }) => {
               密碼
             </Text>
           </FormControl.Label>
-          <FormControl bg={"#EDEDEF"} borderColor={"#C4C4C4"}>
+          <FormControl bg={"#EDEDEF"} >
             <Input type="password" />
           </FormControl>
           <Link
@@ -81,14 +72,17 @@ const LoginScreen = ({ navigation }) => {
             mt="2"
             width="40%"
             alignSelf="center"
-            // bg="#A1917A"
+            _dark={{ bg: "#FFFAE1" } }
+            _light={{ bg: "#A1917A" }}
+          
             borderRadius={10}
           >
-            <Text color={"white"} fontSize="14" fontWeight="600">
+            <Text  fontSize="14" fontWeight="600"
+            _dark={{ color: "black" }}
+            _light={{ color: "white" }}>
               登入
             </Text>
           </Button>
-
           <HStack mt="6" justifyContent="center">
             <Text
               fontSize="14"

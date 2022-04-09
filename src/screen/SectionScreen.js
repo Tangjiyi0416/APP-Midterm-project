@@ -21,17 +21,19 @@ const SectionScreen = ({
 }) => {
   const { photo, title, findDetail, label } = route.params;
 
-  // if ({ label } == "brunch") {
   return (
   <ScrollView>
-    <Box mx="auto"  >
-      <HStack mt={5} >
-          <Box justifyContent="flex-end" pb={1.5}>
+    <Box width="100%" 
+     _dark={{ bg: "#3F382E" }}
+     _light={{ bg: "#FFFAE1" }}
+     >
+      <HStack mt={5}  >
+          <Box  mt={1} ml={30}>
               <MaterialIcons name="restaurant-menu" color={"gray"} size={28} />
             </Box>
             <Text  fontSize={26}>早午餐</Text>
         </HStack>
-      <VStack mt={5}>
+      <VStack mt={5} alignSelf="center">
         <Pressable onPress={() => navigation.navigate("DetailScreen", section)}>
           <AspectRatio w="350" h="250">
             <Image
@@ -62,7 +64,7 @@ const SectionScreen = ({
         </VStack>
         
 
-        <VStack mt={10}>
+        <VStack mt={10}  alignSelf="center">
           <Pressable onPress={() => navigation.navigate("DetailScreen", section)}>
             <AspectRatio w="350" h="250">
               <Image
@@ -92,7 +94,7 @@ const SectionScreen = ({
           </HStack>
         </VStack>
 
-        <VStack mt={10}>
+        <VStack mt={10}  alignSelf="center">
         <Pressable onPress={() => navigation.navigate("DetailScreen", section)}>
           <AspectRatio w="350" h="250">
             <Image
@@ -122,7 +124,7 @@ const SectionScreen = ({
           </HStack>
         </VStack>
 
-        <VStack mt={10}>
+        <VStack mt={10}  alignSelf="center">
         <Pressable onPress={() => navigation.navigate("DetailScreen", section)}>
           <AspectRatio w="350" h="250">
             <Image
@@ -152,7 +154,7 @@ const SectionScreen = ({
           </HStack>
         </VStack>
         
-        <VStack mt={10}>
+        <VStack mt={10}  alignSelf="center">
         <Pressable onPress={() => navigation.navigate("DetailScreen", section)}>
           <AspectRatio w="350" h="250">
             <Image
@@ -182,7 +184,7 @@ const SectionScreen = ({
           </HStack>
         </VStack>
 
-        <VStack mt={10}>
+        <VStack mt={10}  alignSelf="center">
         <Pressable onPress={() => navigation.navigate("DetailScreen", section)}>
           <AspectRatio w="350" h="250">
             <Image
@@ -211,7 +213,7 @@ const SectionScreen = ({
           </HStack>
         </VStack>
 
-        <VStack mt={10}>
+        <VStack mt={10}  alignSelf="center">
         <Pressable onPress={() => navigation.navigate("DetailScreen", section)}>
           <AspectRatio w="350" h="250">
             <Image
@@ -240,7 +242,7 @@ const SectionScreen = ({
           </HStack>
         </VStack>
 
-        <VStack mt={10}>
+        <VStack mt={10}  alignSelf="center">
         <Pressable onPress={() => navigation.navigate("DetailScreen", section)}>
           <AspectRatio w="350" h="250">
             <Image
@@ -269,7 +271,7 @@ const SectionScreen = ({
           </HStack>
         </VStack>
 
-        <VStack mt={10}>
+        <VStack mt={10}  alignSelf="center">
         <Pressable onPress={() => navigation.navigate("DetailScreen", section)}>
           <AspectRatio w="350" h="250">
             <Image
@@ -298,7 +300,7 @@ const SectionScreen = ({
           </HStack>
         </VStack>
 
-        <VStack mt={10}>
+        <VStack mt={10}  alignSelf="center" mb={10}>
         <Pressable onPress={() => navigation.navigate("DetailScreen", section)}>
           <AspectRatio w="350" h="250">
             <Image

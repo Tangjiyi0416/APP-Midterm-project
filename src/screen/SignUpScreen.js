@@ -121,12 +121,14 @@ const SignUpScreen = () => {
           <Button
             onPress={() => Toast.show({ description: "已提交" })}
             mt="2"
-            colorScheme="violet"
+            _dark={{ bg: "#FFFAE1" } }
+            _light={{ bg: "#A1917A" }}
             width="60%"
             alignSelf="center"
             mb={5}
           >
-            <Text color={"white"} fontSize="14" fontWeight="600">
+            <Text _dark={{ color: "black" }}
+            _light={{ color: "white" }} fontSize="14" fontWeight="600">
               確認提交
             </Text>
           </Button>

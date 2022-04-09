@@ -51,14 +51,14 @@ const DetailScreen = ({ route }) => {
             alt="store"
             //   borderRadius={10}
             //   blurRadius={6}
-            opacity={60}
+            opacity={80}
           />
         </AspectRatio>
 
         <Box>
           <HStack mt={30} ml={10}>
             <Box justifyContent="flex-end">
-              <Text fontSize={28}>{name}</Text>
+              <Text fontSize={26}>{name}</Text>
             </Box>
           </HStack>
           <Box pb={1}>
@@ -67,7 +67,7 @@ const DetailScreen = ({ route }) => {
               <Text>
                 {star != null ? (
                   <Text>
-                    {star}.0 <Text color={"white"}>/ 5.0</Text>
+                    {star}.0 <Text color={"#808080"}>/ 5.0</Text>
                   </Text>
                 ) : null}
               </Text>
@@ -111,7 +111,7 @@ const DetailScreen = ({ route }) => {
               <MaterialCommunityIcons name="star" color={"#FCAA87"} size={28} />
             </Box>
 
-            <Text ml={3} fontSize={26}>
+            <Text ml={1} fontSize={24}>
               {title}
             </Text>
           </HStack>
@@ -159,7 +159,7 @@ const DetailScreen = ({ route }) => {
               />
             </Box>
             <Box>
-              <Text ml={3} fontSize={26}>
+              <Text ml={3} fontSize={24}>
                 {comment}
               </Text>
             </Box>
@@ -168,7 +168,7 @@ const DetailScreen = ({ route }) => {
             <TextArea
               h={200}
               placeholder="想要說些什麼？"
-              w="75%"
+              w="80%"
               maxW="400"
               mb={10}
               borderColor={"#949494"}
@@ -177,7 +177,7 @@ const DetailScreen = ({ route }) => {
             />
           </Box>
           <Pressable
-            onPress={() => Toast.show({ description: "已送出" })}
+            onPress={() => Toast.show({ description: "已送出" }) }
             width="30%"
             height={30}
             alignSelf="center"

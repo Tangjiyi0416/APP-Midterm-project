@@ -5,7 +5,7 @@ import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 
 const SettingsScreen = ({ navigation }) => {
   return (
-    <Box mt="1" _dark={{ bg: "#3F382E" }} _light={{ bg: "#FFFAE1" }} h="100%">
+    <Box  _dark={{ bg: "#3F382E" }} _light={{ bg: "#FFFAE1" }} h="100%">
       <ListItem
         title="登入/註冊"
         navigation={navigation}
@@ -26,7 +26,7 @@ const SettingsScreen = ({ navigation }) => {
         destination="DisplaySetting"
         icon="icon5"
       />
-      <Divider h={0.5} w="85%" alignSelf="flex-end" bg={"#A1917A"}></Divider>
+      
     </Box>
   );
 };

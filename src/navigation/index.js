@@ -3,6 +3,7 @@ import { NavigationContainer, useTheme } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+import AntDesign from "react-native-vector-icons/AntDesign";
 import {
   StatusBar,
   extendTheme,
@@ -61,7 +62,7 @@ const MyTabs = () => {
       initialRouteName="HomeStack"
       screenOptions={{
         tabBarInactiveTintColor: colorMode == "light" ? "white" : "gray",
-        tabBarActiveTintColor: colorMode == "light" ? "#69563B" : "#FFE7A4",
+        tabBarActiveTintColor: colorMode == "light" ? "#463C2E" : "#FFE7A4",
         tabBarStyle: {
           backgroundColor: colorMode == "light" ? "#A1917A" : "black",
           // fontWeight: "bold",
@@ -176,6 +177,17 @@ const SettingsStack = () => {
             fontWeight: "400",
             fontSize: 20,
           },
+          headerLeft: () => (
+            <TouchableOpacity>
+              <AntDesign
+                name="back"
+                color={colorMode == "light" ? "white" : "white"}
+                size={30}
+                activeOpacity={0.6}
+                onPress={() => goBack()}
+              />
+            </TouchableOpacity>
+          ),
         }}
       />
       <Stack.Screen
@@ -192,6 +204,17 @@ const SettingsStack = () => {
             fontWeight: "400",
             fontSize: 20,
           },
+          headerLeft: () => (
+            <TouchableOpacity>
+              <AntDesign
+                name="back"
+                color={colorMode == "light" ? "white" : "white"}
+                size={30}
+                activeOpacity={0.6}
+                onPress={() => goBack()}
+              />
+            </TouchableOpacity>
+          ),
         }}
       />
     </Stack.Navigator>
@@ -256,8 +279,8 @@ const HomeStack = ({ navigation: { goBack } }) => {
           ),
           headerLeft: () => (
             <TouchableOpacity>
-              <MaterialCommunityIcons
-                name="chevron-left"
+              <AntDesign
+                name="back"
                 color={colorMode == "light" ? "white" : "white"}
                 size={30}
                 activeOpacity={0.6}
@@ -270,7 +293,7 @@ const HomeStack = ({ navigation: { goBack } }) => {
     </Stack.Navigator>
   );
 };
-const SearchStack = () => {
+const SearchStack = ({ navigation: { goBack } }) => {
   const { colorMode } = useColorMode();
   return (
     <Stack.Navigator>
@@ -292,15 +315,29 @@ const SearchStack = () => {
         name="SectionScreen"
         component={SectionScreen}
         options={({ route }) => ({
-          title: "收尋",
+          title: route.params.name,
           // headerShown: false,
-          headerShadowVisible: false,
-          headerTintColor: colorMode == "light" ? "black" : "white",
+          // sheaderTintColor: colorMode == "light" ? "black" : "white",
+          headerStyle: {
+            backgroundColor: colorMode == "light" ? "#A1917A" : "black",
+          },
           headerTitleStyle: {
             fontWeight: "400",
             fontSize: 20,
-            color: colorMode == "light" ? "white" : "black",
+            color: colorMode == "light" ? "#A1917A" : "black",
           },
+          
+          headerLeft: () => (
+            <TouchableOpacity>
+              <AntDesign
+                name="back"
+                color={colorMode == "light" ? "white" : "white"}
+                size={30}
+                activeOpacity={0.6}
+                onPress={() => goBack()}
+              />
+            </TouchableOpacity>
+          ),
         })}
       />
       <Stack.Screen
@@ -310,7 +347,9 @@ const SearchStack = () => {
           title: route.params.name,
           // headerShown: false,
           headerShadowVisible: false,
-          // headerTintColor: colorMode == "light" ? "black" : "white",
+          headerStyle: {
+            backgroundColor: colorMode == "light" ? "#A1917A" : "black",
+          },
           headerTitleStyle: {
             fontWeight: "400",
             fontSize: 20,

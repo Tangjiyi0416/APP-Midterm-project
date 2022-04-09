@@ -31,7 +31,7 @@ const HomeData = ({ Home, navigation }) => {
           </AspectRatio>
         </Pressable>
 
-        <Text fontWeight="bold" fontSize="18">
+        <Text fontWeight="bold" fontSize="20">
           {Home.name}
         </Text>
         <Text color={"#808080"}>{Home.address}</Text>
