@@ -42,7 +42,7 @@ const HomeList = ({ list, navigation }) => {
               <TouchableOpacity w={150} h={100}>
                 <Image
                   source={{
-                    uri: "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/Group%2077.png?raw=true",
+                    uri: "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/抽籤.png?raw=true",
                   }}
                   w={150}
                   h={100}

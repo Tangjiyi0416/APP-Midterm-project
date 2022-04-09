@@ -12,7 +12,7 @@ import {
   AspectRatio,
   KeyboardAvoidingView,
 } from "native-base";
-import { TouchableOpacity, activeOpacity } from "react-native";
+import { TouchableOpacity, activeOpacity, Platform } from "react-native";
 import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
 
 // import {
