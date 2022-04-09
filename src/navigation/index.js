@@ -140,8 +140,9 @@ const SettingsStack = () => {
         name="Settings"
         component={SettingsScreen}
         options={{
-          title: "設定",
+          // title: "設定",
           headerShadowVisible: false,
+          headerShown: false,
           headerTitleStyle: {
             fontWeight: "400",
             fontSize: 20,
@@ -167,7 +168,10 @@ const SettingsStack = () => {
         options={{
           title: "登錄",
           headerShadowVisible: false,
-          headerTintColor: colorMode == "light" ? "black" : "white",
+          headerStyle: {
+            backgroundColor: colorMode == "light" ? "#A1917A" : "black",
+          },
+          headerTintColor: colorMode == "light" ? "white" : "white",
           headerTitleStyle: {
             fontWeight: "400",
             fontSize: 20,
@@ -180,7 +184,10 @@ const SettingsStack = () => {
         options={{
           title: "註冊",
           headerShadowVisible: false,
-          headerTintColor: colorMode == "light" ? "black" : "white",
+          headerStyle: {
+            backgroundColor: colorMode == "light" ? "#A1917A" : "black",
+          },
+          headerTintColor: colorMode == "light" ? "white" : "white",
           headerTitleStyle: {
             fontWeight: "400",
             fontSize: 20,
