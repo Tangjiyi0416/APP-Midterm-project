@@ -20,7 +20,10 @@ const HomeList = ({ list, navigation }) => {
     <HomeData Home={item} navigation={navigation} />
   );
   return (
-    <Box _dark={{ borderColor: "black", borderWidth: 0.6 }}>
+    <Box
+      _dark={{ borderColor: "black", borderWidth: 0.6 }}
+      _light={{ bg: "#FFFAE1", borderRadius: 6 }}
+    >
       <FlatList
         ListHeaderComponent={
           <>
