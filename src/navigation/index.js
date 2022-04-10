@@ -177,17 +177,17 @@ const SettingsStack = () => {
             fontWeight: "400",
             fontSize: 20,
           },
-          headerLeft: () => (
-            <TouchableOpacity>
-              <AntDesign
-                name="back"
-                color={colorMode == "light" ? "white" : "white"}
-                size={30}
-                activeOpacity={0.6}
-                onPress={() => goBack()}
-              />
-            </TouchableOpacity>
-          ),
+          // headerLeft: () => (
+          //   <TouchableOpacity>
+          //     <AntDesign
+          //       name="back"
+          //       color={colorMode == "light" ? "white" : "white"}
+          //       size={30}
+          //       activeOpacity={0.6}
+          //       onPress={() => goBack()}
+          //     />
+          //   </TouchableOpacity>
+          // ),
         }}
       />
       <Stack.Screen
@@ -204,17 +204,17 @@ const SettingsStack = () => {
             fontWeight: "400",
             fontSize: 20,
           },
-          headerLeft: () => (
-            <TouchableOpacity>
-              <AntDesign
-                name="back"
-                color={colorMode == "light" ? "white" : "white"}
-                size={30}
-                activeOpacity={0.6}
-                onPress={() => goBack()}
-              />
-            </TouchableOpacity>
-          ),
+          // headerLeft: () => (
+          //   <TouchableOpacity>
+          //     <AntDesign
+          //       name="back"
+          //       color={colorMode == "light" ? "white" : "white"}
+          //       size={30}
+          //       activeOpacity={0.6}
+          //       onPress={() => goBack()}
+          //     />
+          //   </TouchableOpacity>
+          // ),
         }}
       />
     </Stack.Navigator>
@@ -293,7 +293,7 @@ const HomeStack = ({ navigation: { goBack } }) => {
     </Stack.Navigator>
   );
 };
-const SearchStack = ({ navigation: { goBack } }) => {
+const SearchStack = () => {
   const { colorMode } = useColorMode();
   return (
     <Stack.Navigator>
@@ -321,23 +321,24 @@ const SearchStack = ({ navigation: { goBack } }) => {
           headerStyle: {
             backgroundColor: colorMode == "light" ? "#A1917A" : "black",
           },
+          headerTintColor: colorMode == "light" ? "white" : "white",
           headerTitleStyle: {
             fontWeight: "400",
             fontSize: 20,
             color: colorMode == "light" ? "#A1917A" : "black",
           },
-          
-          headerLeft: () => (
-            <TouchableOpacity>
-              <AntDesign
-                name="back"
-                color={colorMode == "light" ? "white" : "white"}
-                size={30}
-                activeOpacity={0.6}
-                onPress={() => goBack()}
-              />
-            </TouchableOpacity>
-          ),
+
+          // headerLeft: () => (
+          //   <TouchableOpacity>
+          //     <AntDesign
+          //       name="back"
+          //       color={colorMode == "light" ? "white" : "white"}
+          //       size={30}
+          //       activeOpacity={0.6}
+          //       onPress={() => goBack()}
+          //     />
+          //   </TouchableOpacity>
+          // ),
         })}
       />
       <Stack.Screen
@@ -347,6 +348,7 @@ const SearchStack = ({ navigation: { goBack } }) => {
           title: route.params.name,
           // headerShown: false,
           headerShadowVisible: false,
+          headerTintColor: colorMode == "light" ? "white" : "white",
           headerStyle: {
             backgroundColor: colorMode == "light" ? "#A1917A" : "black",
           },
@@ -365,7 +367,10 @@ const SearchStack = ({ navigation: { goBack } }) => {
           // title: route.params.name,
           // headerShown: false,
           headerShadowVisible: false,
-          // headerTintColor: colorMode == "light" ? "black" : "white",
+          headerTintColor: colorMode == "light" ? "white" : "white",
+          headerStyle: {
+            backgroundColor: colorMode == "light" ? "#A1917A" : "black",
+          },
           headerTitleStyle: {
             fontWeight: "400",
             fontSize: 20,

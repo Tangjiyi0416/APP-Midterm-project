@@ -25,8 +25,10 @@ const SearchList = ({ list, navigation }) => {
               fontSize={"13"}
             ></Input>
           </HStack>
-          <Box mt={5} ml={8}>
-            <Text fontSize={20} fontWeight="bold">所有類別</Text>
+          <Box mt={5} ml={16}>
+            <Text fontSize={20} fontWeight="bold">
+              所有類別
+            </Text>
           </Box>
         </>
       }

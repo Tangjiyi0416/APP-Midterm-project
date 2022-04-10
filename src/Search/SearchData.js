@@ -15,16 +15,19 @@ import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityI
 import Starbar from "../star/starabr";
 const SearchData = ({ Search, navigation }) => {
   return (
-    <Box   _dark={{ bg: "#3F382E" }} _light={{ bg: "#FFFAE1" }}>
-      <HStack alignSelf="center">
+    <Box _dark={{ bg: "#3F382E" }} _light={{ bg: "#FFFAE1" }}>
+      <HStack alignSelf="center" mb={3}>
         <Pressable onPress={() => navigation.navigate("SectionScreen", Search)}>
-          <AspectRatio w="320" h="200" mt={5}  alignSelf="center">
-            <Image
-              source={{ uri: Search.photo }}
-              alt="store"
-              borderRadius={10}
-             />
-          </AspectRatio>
+          {/* <AspectRatio w="320" h="200" mt={5} alignSelf="center"> */}
+          <Image
+            source={{ uri: Search.photo }}
+            alt="store"
+            borderRadius={10}
+            w={300}
+            h={150}
+            mt={5}
+          />
+          {/* </AspectRatio> */}
         </Pressable>
       </HStack>
     </Box>
