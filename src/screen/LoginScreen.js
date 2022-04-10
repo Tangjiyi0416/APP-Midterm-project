@@ -29,7 +29,7 @@ const LoginScreen = ({ navigation }) => {
       h="100%"
       >
       <Box  w="80%" justifyContent={"center"} >
-        <Text fontSize={24} fontWeight="bold" >登入您的帳號</Text>
+        <Text fontSize={20} fontWeight="bold" >登入您的帳號</Text>
         <Heading
           mt="1"
           _dark={{

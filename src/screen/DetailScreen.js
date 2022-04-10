@@ -58,7 +58,7 @@ const DetailScreen = ({ route }) => {
         <Box>
           <HStack mt={30} ml={10}>
             <Box justifyContent="flex-end">
-              <Text fontSize={26}>{name}</Text>
+              <Text fontSize={24}>{name}</Text>
             </Box>
           </HStack>
           <Box pb={1}>
@@ -111,38 +111,38 @@ const DetailScreen = ({ route }) => {
               <MaterialCommunityIcons name="star" color={"#FCAA87"} size={28} />
             </Box>
 
-            <Text ml={1} fontSize={24}>
+            <Text ml={1} fontSize={20}>
               {title}
             </Text>
           </HStack>
           <Box ml={10} mb={5}>
-            <Text ml={3} fontSize={20} fontWeight={"bold"}>
+            <Text ml={3} fontSize={16} fontWeight={"bold"}>
               {food1}
             </Text>
             <HStack mr={130}>
-              <Text ml={3} mr={3} fontSize={16}>
+              <Text ml={3} mr={3} fontSize={14}>
                 {food1des}
               </Text>
               <Image source={{ uri: food1img }} w={90} h={90} alt="food" />
             </HStack>
           </Box>
           <Box ml={10} mb={5}>
-            <Text ml={3} fontSize={20} fontWeight={"bold"}>
+            <Text ml={3} fontSize={16} fontWeight={"bold"}>
               {food2}
             </Text>
             <HStack mr={130}>
-              <Text ml={3} mr={3} fontSize={16}>
+              <Text ml={3} mr={3} fontSize={14}>
                 {food2des}
               </Text>
               <Image source={{ uri: food2img }} w={90} h={90} alt="food" />
             </HStack>
           </Box>
           <Box ml={10} mb={5}>
-            <Text ml={3} fontSize={20} fontWeight={"bold"}>
+            <Text ml={3} fontSize={16} fontWeight={"bold"}>
               {food3}
             </Text>
             <HStack mr={130}>
-              <Text ml={3} mr={3} fontSize={16}>
+              <Text ml={3} mr={3} fontSize={14}>
                 {food3des}
               </Text>
               <Image source={{ uri: food3img }} w={90} h={90} alt="food" />
@@ -159,7 +159,7 @@ const DetailScreen = ({ route }) => {
               />
             </Box>
             <Box>
-              <Text ml={3} fontSize={24}>
+              <Text ml={3} fontSize={20}>
                 {comment}
               </Text>
             </Box>

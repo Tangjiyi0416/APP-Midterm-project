@@ -27,12 +27,12 @@ const SignUpScreen = () => {
   const { colorMode } = useColorMode();
   const formLabelStyle = {
     color: colorMode == "light" ? "muted.700" : "white",
-    fontSize: "18",
+    fontSize: "16",
     fontWeight: 600,
   };
   const focusInputStyle = {
     borderColor: colorMode == "light" ? "muted.700" : "white",
-    fontSize: "16",
+    fontSize: "14",
   };
 
   const nameRegex = /^[a-zA-Z]+\w*$/;
@@ -118,17 +118,17 @@ const SignUpScreen = () => {
               onChangeText={(text) => setTel(text)}
             />
           </FormControl>
-          <Button
+          <Button 
             onPress={() => Toast.show({ description: "已提交" })}
             mt="2"
             _dark={{ bg: "#FFFAE1" } }
             _light={{ bg: "#A1917A" }}
             width="60%"
             alignSelf="center"
-            mb={5}
+            mb={20}
           >
             <Text _dark={{ color: "black" }}
-            _light={{ color: "white" }} fontSize="14" fontWeight="600">
+            _light={{ color: "white" }} fontSize="14" fontWeight="600" >
               確認提交
             </Text>
           </Button>
