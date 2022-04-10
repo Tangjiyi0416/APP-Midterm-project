@@ -106,27 +106,6 @@
       "food3des": "滿滿的豬肉量，熱騰騰的米飯包裹著一粒粒的豬肉，真的好扎實。調味不像泰式餐廳那種重口味跟辛辣，取而代之的是家常的味道。",
       "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg",
       "comment": "留言評論區"
-    },
-    {
-      "name": "JOY.S LOVE就是愛",
-      "address": "台北市大安區和平東路二段118巷4號",
-      "phone": "0987-020-554",
-      "time": "11:30 ~ 19:30",
-      "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/就是愛煎餅果子.jpeg?raw=true",
-      "star": 4,
-      "menu": "菜單資訊",
-      "url": "https://ireneslife.com/wp-content/uploads/2020/09/1598777015-284c73d8c53b04618ab1a7729e8d9714.jpg",
-      "title": "人氣推薦",
-      "food1": "香煎厚切豬排煎餅果子",
-      "food1des": "裡面有滿滿的『薄脆』，為整個捲餅增添不少口感，麵皮煎得很香，調味也很不錯。",
-      "food1img": "https://s.yimg.com/ny/api/res/1.2/BLxx78b5tcmpUIhIp_GBNQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/4fc02920-07e9-11eb-bf7d-0055f23b049d",
-      "food2": "鮪魚洋蔥煎餅菓子",
-      "food2des": "煎餅菓子就是軟可麗餅皮內包蛋、蔬菜和脆脆的油炸物。鮪魚洋蔥都有加熱過，吃起來還挺清爽的。",
-      "food2img": "https://lh3.googleusercontent.com/y4g6V3c8Aw6v6iMTFHQJgaSN6QpVLPTHlbKP4QKAKuT6ApkYIsGaXmRjkm8eFm7VqpenZ593eapwX7D2XzHnrI8dUhTd2eUS-2APamE3A9Mtnw=s600",
-      "food3": "打拋豬飯糰",
-      "food3des": "滿滿的豬肉量，熱騰騰的米飯包裹著一粒粒的豬肉，真的好扎實。調味不像泰式餐廳那種重口味跟辛辣，取而代之的是家常的味道。",
-      "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg",
-      "comment": "留言評論區"
     }
   ],
   "brunchList": [
@@ -216,7 +195,7 @@
       "title": "search",
       "label": "brunch",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/棕早午餐.png?raw=true",
-
+      "photo2": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/%E9%BB%83%E6%97%A9%E5%8D%88%E9%A4%90.png?raw=true",
       "findDetail": [
         {
           "name": "JOY.S LOVE就是愛",
@@ -304,6 +283,7 @@
       "title": "search",
       "label": "prandial",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/棕午晚餐.png?raw=true",
+      "photo2": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/%E9%BB%83%E5%8D%88%E6%99%9A%E9%A4%90.png?raw=true",
       "findDetail": [
         {
           "name": "JOY.S LOVE",
@@ -343,6 +323,7 @@
       "title": "search",
       "label": "dessert",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/棕甜點.png?raw=true",
+      "photo2": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/%E9%BB%83%E7%94%9C%E9%BB%9E.png?raw=true",
       "findDetail": [
         {
           "name": "雪人兄弟",
@@ -357,7 +338,8 @@
     {
       "title": "search",
       "label": "drink",
-      "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/棕飲料.png?raw=true"
+      "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/棕飲料.png?raw=true",
+      "photo2": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/%E9%BB%83%E9%A3%B2%E6%96%99.png?raw=true"
     }
   ]
 }

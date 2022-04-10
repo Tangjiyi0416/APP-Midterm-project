@@ -19,8 +19,11 @@ const SearchData = ({ Search, navigation }) => {
       <HStack alignSelf="center" mb={3}>
         <Pressable onPress={() => navigation.navigate("SectionScreen", Search)}>
           {/* <AspectRatio w="320" h="200" mt={5} alignSelf="center"> */}
+
           <Image
-            source={{ uri: Search.photo }}
+            _dark={{ source: { uri: Search.photo2 } }}
+            _light={{ source: { uri: Search.photo } }}
+            // source={a ? { uri: Search.photo } : { uri: Search.photo2 }}
             alt="store"
             borderRadius={10}
             w={300}
