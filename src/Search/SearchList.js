@@ -13,19 +13,18 @@ const SearchList = ({ list, navigation }) => {
       ListHeaderComponent={
         <>
           <HStack mt={10} justifyContent="center">
-            <Box mr={2} mt={1}>
-              <MaterialIcons name="search" color={"#FCAA87"} size={28} />
+            <Box mr={2} mt={3}>
+              <MaterialIcons name="search" color={"#FCAA87"} size={32} />
             </Box>
             <Input
               placeholder="搜尋國北附近美食"
-              w={300}
+              w={280}
               borderRadius={10}
               borderWidth={2}
               bg={"white"}
               fontSize={"13"}
             ></Input>
           </HStack>
-        
         </>
       }
       data={list}
