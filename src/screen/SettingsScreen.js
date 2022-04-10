@@ -26,6 +26,7 @@ const SettingsScreen = ({ navigation }) => {
         destination="DisplaySetting"
         icon="icon5"
       />
+       <Divider h={0.5} w="85%" alignSelf="flex-end" bg={"#A1917A"}></Divider>
       
     </Box>
   );

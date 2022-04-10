@@ -14,7 +14,7 @@ const SearchList = ({ list, navigation }) => {
         <>
           <HStack mt={10} justifyContent="center">
             <Box mr={2} mt={1}>
-              <MaterialIcons name="search" color={"black"} size={28} />
+              <MaterialIcons name="search" color={"#FCAA87"} size={28} />
             </Box>
             <Input
               placeholder="搜尋國北附近美食"
@@ -25,11 +25,7 @@ const SearchList = ({ list, navigation }) => {
               fontSize={"13"}
             ></Input>
           </HStack>
-          <Box mt={5} ml={16}>
-            <Text fontSize={20} fontWeight="bold">
-              所有類別
-            </Text>
-          </Box>
+        
         </>
       }
       data={list}

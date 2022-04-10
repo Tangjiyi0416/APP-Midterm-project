@@ -89,7 +89,7 @@ const SectionScreen = ({
       >
         <HStack mt={5}>
           <Box mt={1} ml={30}>
-            <MaterialIcons name="restaurant-menu" color={"gray"} size={28} />
+            <MaterialIcons name="restaurant-menu" color={"#FCAA87"} size={28} />
           </Box>
           <Text fontSize={26}>早午餐</Text>
         </HStack>
@@ -99,7 +99,7 @@ const SectionScreen = ({
           >
             <AspectRatio w="350" h="250">
               <Image
-                source={{ uri: foodData.findList[i].findDetail[n].photo }}
+                source={{ uri: foodData.findList[0].findDetail[0].photo }}
                 alt="store"
                 borderRadius={10}
               />
@@ -124,7 +124,7 @@ const SectionScreen = ({
             </Text>
           </HStack>
         </VStack>
-        /*{" "}
+      
         <VStack mt={10} alignSelf="center">
           <Pressable
             onPress={() => navigation.navigate("DetailScreen", section)}
@@ -211,7 +211,7 @@ const SectionScreen = ({
             <Text>
               {foodData.findList[0].findDetail[3].star != null ? (
                 <Text>
-                  {foodData.findList[0].findDetail[0].star}.0
+                  {foodData.findList[0].findDetail[3].star}.0
                   <Text color={"#808080"}>/ 5.0</Text>
                 </Text>
               ) : null}

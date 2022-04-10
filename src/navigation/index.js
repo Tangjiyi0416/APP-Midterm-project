@@ -30,6 +30,7 @@ import SettingsScreen from "../screen/SettingsScreen";
 import DisplaySettingScreen from "../screen/DisplaySettingScreen";
 import LoginScreen from "../screen/LoginScreen";
 import SignUpScreen from "../screen/SignUpScreen";
+import FavoriteScreen  from "../screen/FavoriteScreen";
 
 import { lightTheme, darkTheme } from "../Theme";
 
@@ -104,7 +105,7 @@ const MyTabs = () => {
       />
       <Tab.Screen
         name="FavoriteStack"
-        component={HomeStack}
+        component={FavoriteStack}
         options={{
           headerShown: false,
           title: "最愛",
@@ -381,5 +382,26 @@ const SearchStack = () => {
     </Stack.Navigator>
   );
 };
+
+const FavoriteStack = () => {
+  const { colorMode } = useColorMode();
+  return (
+    <Stack.Navigator>
+      <Stack.Screen
+        name="Favorite"
+        component={FavoriteScreen}
+        options={{
+          headerShadowVisible: false,
+          headerShown: false,
+          headerTitleStyle: {
+            fontWeight: "400",
+            fontSize: 14,
+          },
+        }}
+      />
+     
+     </Stack.Navigator>
+  );
+      }
 
 export default Navigation;
