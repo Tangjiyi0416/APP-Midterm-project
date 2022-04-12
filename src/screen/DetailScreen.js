@@ -73,9 +73,9 @@ const DetailScreen = ({ route }) => {
               </Text>
             </HStack>
           </Box>
-          <HStack ml={10} mb={2}>
+          <HStack ml={10} mb={2} mr={20}>
             <MaterialCommunityIcons name="map-marker" color={"red"} size={25} />
-            <Text ml={3} fontSize={18}>
+            <Text ml={3} fontSize={20}>
               {address}
             </Text>
           </HStack>
@@ -151,7 +151,7 @@ const DetailScreen = ({ route }) => {
         </Box>
         <Box>
           <HStack ml={10} mb={2}>
-            <Box justifyContent="flex-end" pb={1.5}>
+            <Box justifyContent="flex-end" >
               <MaterialCommunityIcons
                 name="comment-text"
                 color={"#FCAA87"}
