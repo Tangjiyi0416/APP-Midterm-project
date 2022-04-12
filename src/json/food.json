@@ -106,7 +106,50 @@
       "food3des": "滿滿的豬肉量，熱騰騰的米飯包裹著一粒粒的豬肉，真的好扎實。調味不像泰式餐廳那種重口味跟辛辣，取而代之的是家常的味道。",
       "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg",
       "comment": "留言評論區"
+    },
+    {
+      "name": "初宅",
+      "address": "台北市大安區和平東路二段175巷35號",
+      "phone": "02 2700-5572",
+      "time": "11:30 ~ 15:00 / 17:00 ~ 21:00",
+      "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/初宅.png?raw=true",
+      "star": 3,
+      "menu": "菜單資訊",
+      "url": "https://live.staticflickr.com/65535/49157799032_f716eb5839_h.jpg",
+      "title": "人氣推薦",
+      "food1": "早餐披薩",
+      "food1des": "在餅皮上加上菠菜及培根，中間再放上半熟蛋，看起來非常可口，餅皮是屬於薄薄脆脆的餅皮。",
+      "food1img": "https://images.deliveryhero.io/image/fd-tw/Products/1289475.jpg?width=500",
+      "food2": "雞肉騎白馬",
+      "food2des": "馬鈴薯和白醬的組合簡直有夠搭，再加上雞胸肉和迷迭香點綴增加豐富度。",
+      "food2img": "https://pic.pimg.tw/a200371123/1575083370-1606670675_l.jpg",
+      "food3": "薯條炸物",
+      "food3des": "初宅的薯條非常棒！油瀝的很乾不會太油膩，屬於粗的薯條，用料實在，口感酥酥脆脆的。",
+      "food3img": "https://live.staticflickr.com/65535/49157099883_dd683a8b02_h.jpg",
+      "comment": "留言評論區"
+    },
+    {
+      "name": "新丼",
+      "address": "台北市大安區和平東路二段118巷45號",
+      "phone": "02 2255-2252",
+      "time": "11:30 ~ 21:30",
+      "photo": "https://d1ralsognjng37.cloudfront.net/a3a95af8-566c-40d5-9fcd-91413227d0b0.jpeg",
+      "star": 4,
+      "menu": "菜單資訊",
+      "url": "https://pic.pimg.tw/joyaijia/1576111216-3544929522_wn.jpg",
+      "title": "人氣推薦",
+      "food1": "韓式新丼",
+      "food1des": "泡菜不會辣偏日式口味，燒肉很嫩份量也算多，把溫泉蛋撲上去後，把蛋黃搓破拌飯一起吃更添風味。",
+      "food1img": "https://cf.shopee.tw/file/5432f9865daef39eea68eb284b51234f",
+      "food2": "衝動-蔥丼",
+      "food2des": "蔥的份量是相當足夠的，口感也很不錯，而且牛肉的份量很足，鋪上滿滿的青蔥搭配起來很好。",
+      "food2img": "https://anniekoko.com/wp-content/uploads/20200105234548_11.jpg",
+      "food3": "無敵炸豬排丼",
+      "food3des": "豬排外皮炸的很酥脆又不會太厚，外酥內軟不會硬柴，豬排本身味道不鹹，搭配偏甜且有淡淡的梅子味的豬排醬。",
+      "food3img": "https://pic.pimg.tw/s711005tension/1619725562-4148164885-g_n.jpg",
+      "comment": "留言評論區"
     }
+    
   ],
   "brunchList": [
     {
