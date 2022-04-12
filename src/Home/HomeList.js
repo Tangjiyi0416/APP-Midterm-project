@@ -11,10 +11,10 @@ import {
   AspectRatio,
   Image,
   ScrollView,
-  Linking,
   Button,
 } from "native-base";
-import { TouchableOpacity } from "react-native";
+
+import { TouchableOpacity, Linking } from "react-native";
 const HomeList = ({ list, navigation }) => {
   const renderItem = ({ item }) => (
     <HomeData Home={item} navigation={navigation} />
@@ -56,18 +56,24 @@ const HomeList = ({ list, navigation }) => {
                 />
               </TouchableOpacity>
               <TouchableOpacity w={150} h={100}>
-                <Image
-                  source={{
-                    uri: "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/%E5%9C%8B%E5%8C%97%E7%94%9F%E6%B4%BB.png?raw=true",
-                  }}
-                  w={150}
-                  h={100}
-                  mt={10}
-                  borderRadius={20}
-                  alt="Home-icon"
-                  borderColor={"#C4C4C4"}
-                  borderWidth={0.5}
-                />
+                <Pressable
+                  onPress={() =>
+                    Linking.openURL("https://www.instagram.com/ntue_life/")
+                  }
+                >
+                  <Image
+                    source={{
+                      uri: "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/%E5%9C%8B%E5%8C%97%E7%94%9F%E6%B4%BB.png?raw=true",
+                    }}
+                    w={150}
+                    h={100}
+                    mt={10}
+                    borderRadius={20}
+                    alt="Home-icon"
+                    borderColor={"#C4C4C4"}
+                    borderWidth={0.5}
+                  />
+                </Pressable>
               </TouchableOpacity>
             </HStack>
           </>
