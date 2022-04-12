@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import AntDesign from "react-native-vector-icons/AntDesign";
+import { FontAwesome5 } from "@expo/vector-icons";
 import {
   StatusBar,
   extendTheme,
@@ -30,7 +31,7 @@ import SettingsScreen from "../screen/SettingsScreen";
 import DisplaySettingScreen from "../screen/DisplaySettingScreen";
 import LoginScreen from "../screen/LoginScreen";
 import SignUpScreen from "../screen/SignUpScreen";
-import FavoriteScreen  from "../screen/FavoriteScreen";
+import FavoriteScreen from "../screen/FavoriteScreen";
 
 import { lightTheme, darkTheme } from "../Theme";
 
@@ -178,6 +179,13 @@ const SettingsStack = () => {
             fontWeight: "400",
             fontSize: 20,
           },
+
+          // headerBackTitle: "返回",
+          // gestureEnabled: true,
+          // headerBackImage: () => (
+          //   <FontAwesome5 name="arrow-alt-circle-left" size={24} color="#fff" />
+          // ),
+
           // headerLeft: () => (
           //   <TouchableOpacity>
           //     <AntDesign
@@ -185,11 +193,12 @@ const SettingsStack = () => {
           //       color={colorMode == "light" ? "white" : "white"}
           //       size={30}
           //       activeOpacity={0.6}
-          //       onPress={() => goBack()}
+          //       onPress={() => Navigation.navigation.goBack("SettingsScreen")}
           //     />
           //   </TouchableOpacity>
           // ),
         }}
+        navigationOption
       />
       <Stack.Screen
         name="SignUpScreen"
@@ -399,9 +408,8 @@ const FavoriteStack = () => {
           },
         }}
       />
-     
-     </Stack.Navigator>
+    </Stack.Navigator>
   );
-      }
+};
 
 export default Navigation;
