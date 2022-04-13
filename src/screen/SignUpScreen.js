@@ -35,7 +35,7 @@ const SignUpScreen = () => {
     fontSize: "14",
   };
 
-  const nameRegex = /^[a-zA-Z]+\w*$/;
+  const nameRegex = /^[a-zA-Z0-9_\-]+$/;
   const emailRegex = /\w{3,}@[a-zA-Z_]+\.[a-zA-Z]{2,5}/;
   const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,15}$/;
   return (
