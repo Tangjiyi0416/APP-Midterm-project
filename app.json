@@ -1,20 +1,21 @@
 {
   "expo": {
-    "name": "wk1proj",
-    "slug": "wk1proj",
+    "name": "ntuelife",
+    "slug": "https:github.combenson0409app-midterm-project.git",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/熊熊.jpg",
+      "image": "./assets/熊熊.png",
       "resizeMode": "contain",
       "backgroundColor": "#FFEDBB"
-      
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -26,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "110919005林毓庭\n110919019簡柏松",
+    "githubUrl": "https://github.com/Benson0409/APP-Midterm-project.git"
   }
 }
