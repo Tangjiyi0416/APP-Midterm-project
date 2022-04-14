@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "ntuelife",
-    "slug": "https:github.combenson0409app-midterm-project.git",
+    "slug": "ntuelife",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -28,7 +28,7 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "description": "110919005林毓庭\n110919019簡柏松",
-    "githubUrl": "https://github.com/Benson0409/APP-Midterm-project.git"
+    "description": "110919005 林毓庭\n110919019 簡柏松",
+    "githubUrl": "https://github.com/Benson0409/APP-Midterm-project"
   }
 }
