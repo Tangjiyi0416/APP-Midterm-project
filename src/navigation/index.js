@@ -168,7 +168,7 @@ const SettingsStack = () => {
       <Stack.Screen
         name="LoginScreen"
         component={LoginScreen}
-        options={{
+        options={({ navigation }) => ({
           title: "登錄",
           headerShadowVisible: false,
           headerStyle: {
@@ -186,24 +186,24 @@ const SettingsStack = () => {
           //   <FontAwesome5 name="arrow-alt-circle-left" size={24} color="#fff" />
           // ),
 
-          // headerLeft: () => (
-          //   <TouchableOpacity>
-          //     <AntDesign
-          //       name="back"
-          //       color={colorMode == "light" ? "white" : "white"}
-          //       size={30}
-          //       activeOpacity={0.6}
-          //       onPress={() => Navigation.navigation.goBack("SettingsScreen")}
-          //     />
-          //   </TouchableOpacity>
-          // ),
-        }}
+          headerLeft: () => (
+            <TouchableOpacity>
+              <AntDesign
+                name="back"
+                color={colorMode == "light" ? "white" : "white"}
+                size={30}
+                activeOpacity={0.6}
+                onPress={() => navigation.goBack()}
+              />
+            </TouchableOpacity>
+          ),
+        })}
         navigationOption
       />
       <Stack.Screen
         name="SignUpScreen"
         component={SignUpScreen}
-        options={{
+        options={({ navigation }) => ({
           title: "註冊",
           headerShadowVisible: false,
           headerStyle: {
@@ -214,24 +214,24 @@ const SettingsStack = () => {
             fontWeight: "400",
             fontSize: 20,
           },
-          // headerLeft: () => (
-          //   <TouchableOpacity>
-          //     <AntDesign
-          //       name="back"
-          //       color={colorMode == "light" ? "white" : "white"}
-          //       size={30}
-          //       activeOpacity={0.6}
-          //       onPress={() => goBack()}
-          //     />
-          //   </TouchableOpacity>
-          // ),
-        }}
+          headerLeft: () => (
+            <TouchableOpacity>
+              <AntDesign
+                name="back"
+                color={colorMode == "light" ? "white" : "white"}
+                size={30}
+                activeOpacity={0.6}
+                onPress={() => navigation.goBack()}
+              />
+            </TouchableOpacity>
+          ),
+        })}
       />
     </Stack.Navigator>
   );
 };
 
-const HomeStack = ({ navigation: { goBack } }) => {
+const HomeStack = () => {
   const { colorMode } = useColorMode();
   const [Like, setLike] = useState(false);
   return (
@@ -258,7 +258,7 @@ const HomeStack = ({ navigation: { goBack } }) => {
       <Stack.Screen
         name="DetailScreen"
         component={DetailScreen}
-        options={({ route }) => ({
+        options={({ navigation, route }) => ({
           title: route.params.name,
           // headerShown: false,
           // sheaderTintColor: colorMode == "light" ? "black" : "white",
@@ -294,7 +294,7 @@ const HomeStack = ({ navigation: { goBack } }) => {
                 color={colorMode == "light" ? "white" : "white"}
                 size={30}
                 activeOpacity={0.6}
-                onPress={() => goBack()}
+                onPress={() => navigation.goBack()}
               />
             </TouchableOpacity>
           ),
@@ -324,7 +324,7 @@ const SearchStack = () => {
       <Stack.Screen
         name="SectionScreen"
         component={SectionScreen}
-        options={({ route }) => ({
+        options={({ navigation, route }) => ({
           title: route.params.name,
           // headerShown: false,
           // sheaderTintColor: colorMode == "light" ? "black" : "white",
@@ -338,23 +338,23 @@ const SearchStack = () => {
             color: colorMode == "light" ? "#A1917A" : "black",
           },
 
-          // headerLeft: () => (
-          //   <TouchableOpacity>
-          //     <AntDesign
-          //       name="back"
-          //       color={colorMode == "light" ? "white" : "white"}
-          //       size={30}
-          //       activeOpacity={0.6}
-          //       onPress={() => goBack()}
-          //     />
-          //   </TouchableOpacity>
-          // ),
+          headerLeft: () => (
+            <TouchableOpacity>
+              <AntDesign
+                name="back"
+                color={colorMode == "light" ? "white" : "white"}
+                size={30}
+                activeOpacity={0.6}
+                onPress={() => navigation.goBack()}
+              />
+            </TouchableOpacity>
+          ),
         })}
       />
       <Stack.Screen
         name="Section"
         component={SectionScreen}
-        options={({ route }) => ({
+        options={({ navigation, route }) => ({
           title: route.params.name,
           // headerShown: false,
           headerShadowVisible: false,
@@ -367,13 +367,24 @@ const SearchStack = () => {
             fontSize: 20,
             color: "white",
           },
+          headerLeft: () => (
+            <TouchableOpacity>
+              <AntDesign
+                name="back"
+                color={colorMode == "light" ? "white" : "white"}
+                size={30}
+                activeOpacity={0.6}
+                onPress={() => navigation.goBack()}
+              />
+            </TouchableOpacity>
+          ),
           // backgroundColor: colorMode == "light" ? "black" : "white",
         })}
       />
       <Stack.Screen
         name="DetailScreen"
         component={DetailScreen}
-        options={({ route }) => ({
+        options={({ navigation, route }) => ({
           // title: route.params.name,
           // headerShown: false,
           headerShadowVisible: false,
@@ -386,6 +397,17 @@ const SearchStack = () => {
             fontSize: 20,
             color: "white",
           },
+          headerLeft: () => (
+            <TouchableOpacity>
+              <AntDesign
+                name="back"
+                color={colorMode == "light" ? "white" : "white"}
+                size={30}
+                activeOpacity={0.6}
+                onPress={() => navigation.goBack()}
+              />
+            </TouchableOpacity>
+          ),
         })}
       />
     </Stack.Navigator>
