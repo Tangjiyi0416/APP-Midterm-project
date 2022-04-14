@@ -1,12 +1,12 @@
 {
   "expo": {
     "name": "ntuelife",
-    "slug": "https:github.combenson0409app-midterm-project.git",
+    "slug": "ntuelife",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/bear.png",
+      "image": "./assets/熊熊.png",
       "resizeMode": "contain",
       "backgroundColor": "#FFEDBB"
     },
