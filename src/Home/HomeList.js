@@ -21,14 +21,13 @@ const HomeList = ({ list, navigation }) => {
     <HomeData Home={item} navigation={navigation} />
   );
   return (
-      <FlatList
-        horizontal={true}
-        data={list}
-        renderItem={renderItem}
-        keyExtractor={(item) => item.photo}
-        showsHorizontalScrollIndicator={false}
-      />
-   
+    <FlatList
+      horizontal={true}
+      data={list}
+      renderItem={renderItem}
+      keyExtractor={(item) => item.photo}
+      showsHorizontalScrollIndicator={false}
+    />
   );
 };
 export default HomeList;
