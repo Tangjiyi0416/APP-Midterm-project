@@ -1,5 +1,8 @@
 {
-  "restaurantList": [
+  "title": "全新活動",
+  "horizontal": true,
+  
+  "data": [
     {
       "name": "辛川屋",
       "address": "台北市和平東路二段331號",
