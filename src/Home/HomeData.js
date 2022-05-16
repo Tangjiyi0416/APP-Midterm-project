@@ -15,12 +15,12 @@ import { TouchableOpacity, activeOpacity, Platform } from "react-native";
 const HomeData = ({ Home, navigation }) => {
   const [Like, setLike] = useState(false);
   return (
-    <Box mx="auto" mb="8" mt={5} ml={8}>
+    <Box mx="auto" mb="8" mt={5} ml={8} mr={3}>
       <VStack
         _dark={{ bg: "#3F382E", borderRadius: 25 }}
         _light={{ bg: "#FFFAE1", borderRadius: 25 }}
       >
-      <Box w={260} h={350}>
+      <Box w={260} h={350} mb={3} >
           <Box >  
             <Image source={{ uri: Home.photo }} alt="store" borderTopRadius={25} w="260" h="192"/>
             <Center position= "absolute"  style={{elevation:3}} marginLeft={220}  marginTop={3} >
@@ -41,7 +41,7 @@ const HomeData = ({ Home, navigation }) => {
             </TouchableOpacity>
        </Center>
             </Box>
-      <Box ml={3} mt={3}>
+      <Box ml={3} mt={3} mr={2}>
         <Text fontWeight="bold" fontSize="20">
           {Home.name}
         </Text>

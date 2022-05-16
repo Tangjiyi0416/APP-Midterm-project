@@ -1,4 +1,5 @@
 import React from "react";
+import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import {
   Box,
   VStack,
@@ -14,6 +15,7 @@ import HomeList from "../Home/HomeList";
 
 const HomeScreen = ({ navigation }) => {
   return (
+    <ScrollView>
     <Box _dark={{ bg: "#3F382E" }} _light={{ bg: "white" }}>
        <Box bg={"#A1917A"} w={"100%"} h={140} borderBottomRadius={20}>
             <Box ml={27} mt={5} >
@@ -55,8 +57,20 @@ const HomeScreen = ({ navigation }) => {
             </Box>
 
             </Box>
-      <HomeList list={foodData.data} navigation={navigation} />
+      <HStack ml={27} mt={5}>
+        <MaterialIcons name="restaurant-menu" color={"#FCAA87"} size={28} />
+        <Text fontSize={24} fontWeight={"bold"}>{foodData.title1}</Text>
+      </HStack>
+      <HomeList list={foodData.data1} navigation={navigation} />
+
+
+      <HStack ml={27} mt={5}>
+        <MaterialIcons name="restaurant-menu" color={"#FCAA87"} size={28} />
+        <Text fontSize={24} fontWeight={"bold"}>{foodData.title2}</Text>
+      </HStack>
+      <HomeList list={foodData.data2} navigation={navigation} />
     </Box>
+    </ScrollView>
   );
 };
 
