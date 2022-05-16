@@ -47,7 +47,7 @@ const HomeData = ({ Home, navigation }) => {
         </Text>
         <Text 
         _dark={{ color:"white"}}
-        _light={ {color:"#808080" } }>{Home.address}</Text>
+        _light={ {color:"#3D3D3D" } }>{Home.address}</Text>
         <HStack>
           <Starbar star={Home.star} />
           <Text>
