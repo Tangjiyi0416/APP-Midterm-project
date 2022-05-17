@@ -17,7 +17,14 @@ const HomeScreen = ({ navigation }) => {
   return (
     <ScrollView>
     <Box _dark={{ bg: "#3F382E" }} _light={{ bg: "white" }} >
-       <Box bg={"#A1917A"} w={"100%"} h={140} borderBottomRadius={20} >
+       <Box bg={"#A1917A"} w={"100%"} h={140} borderBottomRadius={20} 
+        shadowColor={"#000"}
+        shadowOpacity={0.25}
+        shadowRadius={3.84}
+        shadowOffset={
+          {width: 6},
+          {height: 6}
+        }>
             <Box ml={27} mt={5} >
               <Text color={"white"} fontSize={24} fontWeight={"bold"}>歡迎來到國北生活圈</Text>
               

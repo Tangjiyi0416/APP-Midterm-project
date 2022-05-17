@@ -57,6 +57,10 @@ const DetailScreen = ({ route }) => {
             shadowColor={"#000"}
             shadowOpacity={0.25}
             shadowRadius={3.84} 
+            shadowOffset={
+              {width: 6},
+              {height: 6}
+            }
             >
             <HStack mt={30} justifyContent="center">
             <Box >
@@ -79,21 +83,21 @@ const DetailScreen = ({ route }) => {
        </Center>
         <Box>
          
-          <HStack ml={5} mb={5}  mt={20} >
+          <HStack ml={8} mb={3}  mt={20} >
             <MaterialCommunityIcons name="map-marker" color={"red"} size={25} />
             <Text ml={2} fontSize={20}>
               {address}
             </Text>
           </HStack>
-          <Divider h={0.5} w="86%" alignSelf="flex-end" bg={"#A1917A"}></Divider>
-          <HStack ml={5} mb={5} mt={5}>
+          <Divider h={0.5} w="83%" alignSelf="flex-end" bg={"#A1917A"}></Divider>
+          <HStack ml={8} mb={3}  mt={5}>
             <Entypo name="old-phone" color={"#1CDA3A"} size={25} />
             <Text ml={3} fontSize={20}>
               {phone}
             </Text>
           </HStack>
-          <Divider h={0.5} w="86%" alignSelf="flex-end" bg={"#A1917A"}></Divider>
-          <HStack ml={5} mb={2} mt={5}>
+          <Divider h={0.5} w="83%" alignSelf="flex-end" bg={"#A1917A"}></Divider>
+          <HStack ml={8} mb={3}  mt={5}>
             <AntDesign
               name="rest"
               color={"#DAA51C"}
@@ -103,8 +107,8 @@ const DetailScreen = ({ route }) => {
               {time}
             </Text>
           </HStack>
-          <Divider h={0.5} w="86%" alignSelf="flex-end" bg={"#A1917A"}></Divider>
-          <HStack ml={5} mb={2} mt={5}>
+          <Divider h={0.5} w="83%" alignSelf="flex-end" bg={"#A1917A"}></Divider>
+          <HStack ml={8} mb={3}  mt={5}>
             <MaterialIcons name="restaurant-menu" color={"#A447C5"} size={25} />
             <Pressable onPress={() => Linking.openURL(url)}>
               <Text ml={3} fontSize={20}>
@@ -112,7 +116,7 @@ const DetailScreen = ({ route }) => {
               </Text>
             </Pressable>
           </HStack>
-          <Divider h={0.5} w="86%" alignSelf="flex-end" bg={"#A1917A"}></Divider>
+          <Divider h={0.5} w="83%" alignSelf="flex-end" bg={"#A1917A"}></Divider>
         </Box>
       </Box>
     </ScrollView>

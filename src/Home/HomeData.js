@@ -17,6 +17,14 @@ const HomeData = ({ Home, navigation }) => {
   return (
     <Box mx="auto" mb="8" mt={5} ml={8} mr={3}>
       <VStack
+        shadowColor={"#000"}
+        shadowOpacity={0.25}
+        shadowRadius={3.84}
+        shadowOffset={
+          {width: 6},
+          {height: 6}
+        }
+        
         _dark={{ bg: "#3F382E", borderRadius: 25 }}
         _light={{ bg: "#FFFAE1", borderRadius: 25 }}
       >
