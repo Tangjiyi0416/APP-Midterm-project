@@ -55,7 +55,7 @@ const DetailScreen = ({ route }) => {
          <Center position= "absolute" alignSelf={"center"} mt={250}>
             <Box bg={"#FFFAE1"} w={300} h={100} borderRadius={20}  justifyContent={"center"} 
             shadowColor={"#000"}
-            shadowOpacity={0.35}
+            shadowOpacity={0.25}
             shadowRadius={3.84} 
             >
             <HStack mt={30} justifyContent="center">
