@@ -18,19 +18,16 @@ import HomeList from "../Home/HomeList";
 const HomeScreen = ({ navigation }) => {
   return (
     <ScrollView>
-    <Box _dark={{ bg: "#5E5A54" }} _light={{ bg: "#F9FFF6" }} >
-       <Box _dark={{ bg: "#3F382E" }} _light={{ bg: "#A1917A" }}  w={"100%"} h={140} borderBottomRadius={20} 
-        shadowColor={"#000"}
-        shadowOpacity={0.25}
-        shadowRadius={3.84}
-        shadowOffset={
-          {width: 6},
-          {height: 6}
-        }>
-            <Box ml={27} mt={5} >
-              <Text color={"white"} fontSize={24} fontWeight={"bold"}>歡迎來到國北生活圈</Text>
-              
-              <HStack>
+
+      <Box _dark={{ bg: "#3F382E" }} _light={{ bg: "white" }}>
+        <Box bg={"#A1917A"} w={"100%"} h={140} borderBottomRadius={20}>
+          <Box ml={27} mt={5}>
+            <Text color={"white"} fontSize={24} fontWeight={"bold"}>
+              歡迎來到國北生活圈
+            </Text>
+
+            <HStack>
+
               <Pressable
                 height={30}
                 w={100}
@@ -39,9 +36,11 @@ const HomeScreen = ({ navigation }) => {
                 mt={5}
                 mr={3}
               >
-              <Text color={"black"} fontSize="14" pt={1} alignSelf={"center"}>Instagram</Text>
-          </Pressable>
-          <Pressable
+                <Text color={"black"} fontSize="14" pt={1} alignSelf={"center"}>
+                  Instagram
+                </Text>
+              </Pressable>
+              <Pressable
                 height={30}
                 w={100}
                 bg="#FFFAE1"
@@ -49,9 +48,11 @@ const HomeScreen = ({ navigation }) => {
                 mt={5}
                 mr={3}
               >
-              <Text color={"black"} fontSize="14" pt={1} alignSelf={"center"}>抽獎活動</Text>
-          </Pressable>
-          <Pressable
+                <Text color={"black"} fontSize="14" pt={1} alignSelf={"center"}>
+                  抽獎活動
+                </Text>
+              </Pressable>
+              <Pressable
                 height={30}
                 w={100}
                 bg="#FFFAE1"
@@ -59,6 +60,7 @@ const HomeScreen = ({ navigation }) => {
                 mt={5}
                 mr={3}
               >
+
               <Text color={"black"} fontSize="14" pt={1} alignSelf={"center"}>加入我們</Text>
           </Pressable>
           </HStack>
@@ -91,6 +93,7 @@ const HomeScreen = ({ navigation }) => {
       </HStack>
       <HomeList list={foodData.data4} navigation={navigation} />
     </Box>
+
     </ScrollView>
   );
 };
