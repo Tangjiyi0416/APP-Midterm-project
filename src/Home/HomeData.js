@@ -11,7 +11,12 @@ import {
   Center,
 } from "native-base";
 import Starbar from "../star/starabr";
-import { TouchableOpacity, activeOpacity, Platform } from "react-native";
+import {
+  TouchableOpacity,
+  activeOpacity,
+  Platform,
+  elevation,
+} from "react-native";
 const HomeData = ({ Home, navigation }) => {
   const [Like, setLike] = useState(false);
   return (
@@ -20,11 +25,13 @@ const HomeData = ({ Home, navigation }) => {
         shadowColor={"#000"}
         shadowOpacity={0.25}
         shadowRadius={3.84}
-        shadowOffset={
-          {width: 6},
-          {height: 6}
-        }
-        
+        {...(Platform.OS == "ios"
+          ? (shadowOffset = {
+              width: 6,
+              height: 6,
+            })
+          : null)}
+        elevation={6}
         _dark={{ bg: "#3F382E", borderRadius: 25 }}
         _light={{ bg: "#FFFAE1", borderRadius: 25 }}
       >
