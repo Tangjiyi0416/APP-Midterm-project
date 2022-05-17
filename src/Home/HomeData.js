@@ -22,13 +22,13 @@ const HomeData = ({ Home, navigation }) => {
       >
       <Box w={260} h={350} mb={3} >
           <Box >  
-            <Image source={{ uri: Home.photo }} alt="store" borderTopRadius={25} w="260" h="192"/>
+            <Image source={{ uri: Home.photo }} alt="store" borderTopRadius={25} w="260" h="192" opacity={80}/>
             <Center position= "absolute"  style={{elevation:3}} marginLeft={220}  marginTop={3} >
             <TouchableOpacity onPress={() => setLike(!Like)}>
               {Like ? (
                 <MaterialCommunityIcons
                   name="cards-heart"
-                  color={"red"}
+                  color={"#FF0C0C"}
                   size={30}
                 />
               ) : (
@@ -45,14 +45,15 @@ const HomeData = ({ Home, navigation }) => {
         <Text fontWeight="bold" fontSize="20">
           {Home.name}
         </Text>
-        <Text 
+        <Text fontSize="15"
         _dark={{ color:"white"}}
-        _light={ {color:"#3D3D3D" } }>{Home.address}</Text>
+        _light={ {color:"#3D3D3D" } 
+        }>{Home.address}</Text>
         <HStack>
           <Starbar star={Home.star} />
           <Text>
             {Home.star != null ? (
-              <Text>
+              <Text fontSize={18}>
                 {Home.star}.0 <Text color={"#808080"}>/ 5.0</Text>
               </Text>
             ) : null}

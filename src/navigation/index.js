@@ -245,10 +245,7 @@ const HomeStack = () => {
         component={HomeScreen}
         options={{
           headerShadowVisible: false,
-
           headerShown: false,
-          // title: "國北人今天想來點什麼？",
-
           headerTitleStyle: {
             fontWeight: "400",
             fontSize: 14,

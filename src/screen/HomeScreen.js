@@ -58,26 +58,26 @@ const HomeScreen = ({ navigation }) => {
 
             </Box>
       <HStack ml={27} mt={5}>
-        <MaterialIcons name="restaurant-menu" color={"#FCAA87"} size={28} />
+        <MaterialIcons name="fastfood" color={"#DF9879"} size={28}  />
         <Text fontSize={24} fontWeight={"bold"}>{foodData.title1}</Text>
       </HStack>
       <HomeList list={foodData.data1} navigation={navigation} />
 
 
       <HStack ml={27} mt={5}>
-        <MaterialIcons name="restaurant-menu" color={"#FCAA87"} size={28} />
+        <MaterialIcons name="fastfood" color={"#DF9879"} size={28} />
         <Text fontSize={24} fontWeight={"bold"}>{foodData.title2}</Text>
       </HStack>
       <HomeList list={foodData.data2} navigation={navigation} />
 
       <HStack ml={27} mt={5}>
-        <MaterialIcons name="restaurant-menu" color={"#FCAA87"} size={28} />
+        <MaterialIcons name="fastfood" color={"#DF9879"} size={28} />
         <Text fontSize={24} fontWeight={"bold"}>{foodData.title3}</Text>
       </HStack>
       <HomeList list={foodData.data3} navigation={navigation} />
 
       <HStack ml={27} mt={5}>
-        <MaterialIcons name="restaurant-menu" color={"#FCAA87"} size={28} />
+        <MaterialIcons name="fastfood" color={"#DF9879"} size={28} />
         <Text fontSize={24} fontWeight={"bold"}>{foodData.title4}</Text>
       </HStack>
       <HomeList list={foodData.data4} navigation={navigation} />
