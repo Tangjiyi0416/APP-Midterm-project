@@ -46,7 +46,7 @@ const DetailScreen = ({ route }) => {
 
   return (
     <ScrollView>
-      <Box _dark={{ bg: "#3F382E" }} _light={{ bg: "white" }}>
+      <Box _dark={{ bg: "#5E5A54" }} _light={{ bg: "#F6FFF1" }}>
           <Image
             source={{ uri: photo }}
             alt="store"
@@ -64,7 +64,7 @@ const DetailScreen = ({ route }) => {
             >
             <HStack mt={30} justifyContent="center">
             <Box >
-              <Text fontSize={24}>{name}</Text>
+              <Text fontSize={24} color={"black"}>{name}</Text>
             </Box>
           </HStack>
           <Box pb={1} alignSelf={"center"} >
@@ -72,7 +72,7 @@ const DetailScreen = ({ route }) => {
               <Starbar star={star} />
               <Text>
                 {star != null ? (
-                  <Text>
+                  <Text color={"black"}>
                     {star}.0 <Text color={"#808080"}>/ 5.0</Text>
                   </Text>
                 ) : null}

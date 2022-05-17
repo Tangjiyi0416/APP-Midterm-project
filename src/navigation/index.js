@@ -63,11 +63,10 @@ const MyTabs = () => {
     <Tab.Navigator
       initialRouteName="HomeStack"
       screenOptions={{
-        tabBarInactiveTintColor: colorMode == "light" ? "white" : "gray",
-        tabBarActiveTintColor: colorMode == "light" ? "#463C2E" : "#FFE7A4",
+        tabBarInactiveTintColor: colorMode == "light" ? "white" : "#A1917A",
+        tabBarActiveTintColor: colorMode == "light" ? "#463C2E" : "white",
         tabBarStyle: {
-          backgroundColor: colorMode == "light" ? "#A1917A" : "black",
-          // fontWeight: "bold",
+          backgroundColor: colorMode == "light" ? "#A1917A" : "#463C2E",
         },
         tabBarLabelStyle: {
           fontWeight: "bold",
@@ -260,12 +259,12 @@ const HomeStack = () => {
           // headerShown: false,
           // sheaderTintColor: colorMode == "light" ? "black" : "white",
           headerStyle: {
-            backgroundColor: colorMode == "light" ? "#A1917A" : "black",
+            backgroundColor: colorMode == "light" ? "#A1917A" : "#463C2E",
           },
           headerTitleStyle: {
             fontWeight: "400",
             fontSize: 20,
-            color: colorMode == "light" ? "#A1917A" : "black",
+            color: colorMode == "light" ? "#A1917A" : "#463C2E",
           },
           headerRight: () => (
             <TouchableOpacity onPress={() => setLike(!Like)}>
@@ -326,7 +325,7 @@ const SearchStack = () => {
           // headerShown: false,
           // sheaderTintColor: colorMode == "light" ? "black" : "white",
           headerStyle: {
-            backgroundColor: colorMode == "light" ? "#A1917A" : "black",
+            backgroundColor: colorMode == "light" ? "#A1917A" : "#463C2E",
           },
           headerTintColor: colorMode == "light" ? "white" : "white",
           headerTitleStyle: {

@@ -25,7 +25,7 @@ const HomeData = ({ Home, navigation }) => {
           {height: 6}
         }
         
-        _dark={{ bg: "#3F382E", borderRadius: 25 }}
+        _dark={{ bg: "#FFFAE1", borderRadius: 25 }}
         _light={{ bg: "#FFFAE1", borderRadius: 25 }}
       >
       <Box w={260} h={350} mb={3} >
@@ -50,18 +50,17 @@ const HomeData = ({ Home, navigation }) => {
        </Center>
             </Box>
       <Box ml={3} mt={3} mr={2}>
-        <Text fontWeight="bold" fontSize="20">
+        <Text fontWeight="bold" fontSize="20" color={"black"} >
           {Home.name}
         </Text>
         <Text fontSize="15"
-        _dark={{ color:"white"}}
-        _light={ {color:"#3D3D3D" } 
-        }>{Home.address}</Text>
+        color={"black"} 
+        >{Home.address}</Text>
         <HStack>
           <Starbar star={Home.star} />
           <Text>
             {Home.star != null ? (
-              <Text fontSize={18}>
+              <Text fontSize={18} color={"black"} >
                 {Home.star}.0 <Text color={"#808080"}>/ 5.0</Text>
               </Text>
             ) : null}
